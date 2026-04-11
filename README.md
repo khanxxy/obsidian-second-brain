@@ -99,6 +99,27 @@ Füge eine Zeile in die Config deines AI-Tools ein:
 | Codex | `AGENTS.md` | `Lies zuerst: /pfad/zu/VAULT.md` |
 | Cursor | `.cursorrules` | `Lies zuerst: /pfad/zu/VAULT.md` |
 
+Egal welches Tool morgen kommt — solange es Markdown lesen kann, funktioniert es mit diesem Vault.
+
+## Was du brauchst
+
+### Minimum (startet sofort)
+- **[Obsidian](https://obsidian.md)** — Kostenlos, local-first, alle Plattformen
+- **Ein AI-Tool** — Egal welches (Claude Code, Codex, Cursor, ChatGPT, etc.)
+- Mehr brauchst du nicht. Der Vault ist plain Markdown.
+
+### Optional (macht es mächtiger)
+Die AI-Landschaft ändert sich ständig. Hier die **Prinzipien**, nicht die Tools:
+
+| Prinzip | Warum | Beispiele (Stand 2026) |
+|---------|-------|----------------------|
+| **AI Coding Agent** | Liest/schreibt deinen Vault, führt Aufgaben aus | Claude Code, Codex CLI, Cursor |
+| **Web-Zugriff** | Agent kann recherchieren und Wissen in den Vault schreiben | Perplexity MCP, Firecrawl MCP, oder eingebaute Web-Tools |
+| **Plattform-Anbindung** | Direkter Zugriff auf Plattformen die du nutzt | Twitter MCP, Slack MCP, oder API-Integrationen |
+| **Automatisierung** | Vault wächst automatisch (Reports, Digests) | Cron Jobs, LaunchAgents, GitHub Actions |
+
+**Wichtig:** MCP-Server, Plugins und Tools kommen und gehen. Der Vault selbst ist davon unabhängig — er funktioniert auch wenn du alles manuell machst. Automatisierung ist nice-to-have, nicht Voraussetzung.
+
 ## Prinzipien
 
 - **Tool-agnostisch** — Plain Markdown, keine proprietären Formate
