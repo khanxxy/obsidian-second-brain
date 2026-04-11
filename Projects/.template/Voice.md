@@ -1,12 +1,12 @@
-# [Projekt] Voice
+# [Project] Voice
 
-> Wie dieses Projekt kommuniziert. Für jeden Agent der Content erstellt.
+> How this project communicates. For any agent creating content.
 
-## Tonalität
-_Wie soll die Kommunikation klingen?_
+## Tone
+_How should communication sound?_
 
-## Sprache
-_Welche Sprache(n), welcher Stil?_
+## Language
+_Which language(s), which style?_
 
 ## Do's
 - ...
@@ -14,8 +14,8 @@ _Welche Sprache(n), welcher Stil?_
 ## Don'ts
 - ...
 
-## Kernbotschaften
+## Key Messages
 - ...
 
-## Beispiele
-_Füge echte Beispiele guter Kommunikation ein._
+## Examples
+_Include real examples of good communication._

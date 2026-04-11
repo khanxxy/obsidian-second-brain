@@ -1,33 +1,33 @@
 # VAULT.md
 
-> Dein Second Brain. Source of Truth für alle AI-Agents.
-> Jeder Agent liest diese Datei zuerst. Navigiere von hier.
+> Your Second Brain. Source of truth for all AI agents.
+> Every agent reads this file first. Navigate from here.
 
-## Wer bist du?
+## Who Are You?
 → [[People/Me]]
 
-## Regeln für Agents
-→ [[AI-Learnings/AI Regeln]]
+## Rules for Agents
+→ [[AI-Learnings/AI Rules]]
 
-## Import aus anderen Tools
-→ [[AI-Learnings/Import Instructions]] — Wie Chat-Verläufe (Claude, ChatGPT, Gemini) in diesen Vault importiert werden
+## Importing from Other Tools
+→ [[AI-Learnings/Import Instructions]] — How to import chat histories (Claude, ChatGPT, Gemini) into this vault
 
-## Projekte
-| Projekt | Status | Einstieg |
-|---------|--------|----------|
-| _Beispiel_ | _Aktiv_ | _[[Projects/Beispiel/Beispiel]]_ |
+## Projects
+| Project | Status | Entry Point |
+|---------|--------|-------------|
+| Example SaaS | Active | [[Projects/Example-SaaS/Example-SaaS]] |
 
-## Wissen
+## Knowledge
 → [[Knowledge/Index]]
 
 ## People
 → [[People/Index]]
 
-## Entscheidungen
+## Decisions
 → [[Decisions/Index]]
 
 ## Agents
 → [[Agents/Index]]
 
 ## Inbox
-→ Inbox/ — Unverarbeitetes, wird einsortiert
+→ Inbox/ — Unprocessed notes, to be sorted

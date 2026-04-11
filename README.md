@@ -1,136 +1,150 @@
-# Obsidian Second Brain Template
+# Obsidian Second Brain
 
-Ein universelles Second Brain für Obsidian. Dein Wissen, deine Projekte, deine Entscheidungen — an einem Ort. Optimiert für die Zusammenarbeit mit AI-Agents (Claude, Codex, Cursor, etc.).
+A universal Second Brain template for Obsidian — optimised for AI agent collaboration.
 
-## Was ist das?
+Your knowledge, projects, decisions — one place. Any AI agent reads `VAULT.md` and navigates itself to the right context. No plugins required. Plain Markdown.
 
-Ein Vault-Template das auf dem **VAULT.md Pattern** basiert:
-- **VAULT.md** ist der universelle Einstiegspunkt für jeden AI-Agent
-- Jeder Agent liest eine Datei und navigiert sich selbst zum relevanten Kontext
-- Wissen ist als vernetzte Markdown-Files organisiert (Skill Graph Prinzip)
-- Tool-agnostisch: Alles plain Markdown, funktioniert mit jedem Tool
+## Why This Exists
+
+AI agents (Claude Code, Codex, Cursor, Copilot, etc.) are powerful — but they forget everything between sessions. This vault is their long-term memory. Yours too.
+
+The **VAULT.md pattern** gives every agent a single entry point. From there, it follows wiki-links to load only what it needs. No context window wasted on irrelevant files.
 
 ## Quick Start
 
-1. **Klone dieses Repo** (oder "Use this template" auf GitHub)
-2. **Öffne den Ordner in Obsidian** (Manage Vaults → Open folder as vault)
-3. **Fülle `People/Me.md`** aus — dein Profil, Stimme, Stil
-4. **Erstelle dein erstes Projekt** — kopiere `Projects/.template/` und passe an
-5. **Sag deinem AI-Agent**: "Lies zuerst VAULT.md"
+1. Click **"Use this template"** on GitHub (or clone the repo)
+2. Open the folder in [Obsidian](https://obsidian.md) → Manage Vaults → Open folder as vault
+3. Fill in `People/Me.md` — your profile, voice, preferences
+4. Create your first project — copy `Projects/.template/` and customise
+5. Tell your AI agent: **"Read VAULT.md first"**
 
-## Struktur
+That's it. The vault grows organically from there.
+
+## Structure
 
 ```
-VAULT.md                  ← Agent-Einstiegspunkt
-Home.md                   ← Dein persönlicher Einstieg
-Changelog.md              ← Was ist neu
+VAULT.md                  ← Agent entry point (read this first)
+Home.md                   ← Your personal dashboard
+Changelog.md              ← What changed and when
 
-People/                   ← Du und dein Netzwerk
+People/                   ← You and your network
   Index.md
-  Me.md                   ← Dein Profil
+  Me.md                   ← Your profile, voice, style
 
-Projects/                 ← Deine Projekte
-  .template/              ← Kopierbare Vorlagen
-    PROJECT.md            ← Projekt-Einstieg
-    Voice.md              ← Kommunikationsstil
-    ICP.md                ← Zielgruppe
-    Services.md           ← Angebot
+Projects/                 ← Your projects
+  .template/              ← Copy this to start a new project
+    PROJECT.md            ← Project overview
+    Voice.md              ← How this project communicates
+    ICP.md                ← Target audience
+    Services.md           ← What's offered
+  Example-SaaS/           ← Filled example to show the pattern
 
-Knowledge/                ← Dein Wissen (erstelle eigene Unterordner)
-  Index.md
-
-Decisions/                ← Warum du was entschieden hast
+Knowledge/                ← Your knowledge (create subfolders as needed)
   Index.md
 
-Agents/                   ← AI-Agent Konfiguration
+Decisions/                ← Why you decided what you decided
   Index.md
 
-AI-Learnings/             ← Regeln für AI-Agents
-  AI Regeln.md
+Agents/                   ← AI agent configs, MCP servers, automations
+  Index.md
 
-Inbox/                    ← Drop-Zone für Unsortiertes
+AI-Learnings/             ← Rules for AI agents (learned from mistakes)
+  AI Rules.md
+  Import Instructions.md
+
+Inbox/                    ← Drop zone for unsorted notes
 ```
 
-## Wie es funktioniert
+## How It Works
 
-### Für dich
-- Schreib Ideen, Gedanken, Notizen → wirf sie in `Inbox/`
-- Dein AI-Agent sortiert sie später ein
-- Fülle deine Projekte Schritt für Schritt
+### For You
+- Drop ideas, notes, thoughts into `Inbox/`
+- Your AI agent sorts them into the right place
+- Fill your projects step by step — or let the agent do it
 
-### Für AI-Agents
+### For AI Agents
 ```
-Agent bekommt Aufgabe
+Agent receives task
     ↓
-Liest VAULT.md
+Reads VAULT.md
     ↓
-Folgt Link zum relevanten Bereich
+Follows link to relevant section
     ↓
-Liest Index.md des Bereichs
+Reads Index.md of that section
     ↓
-Folgt Wikilinks zu spezifischen Files
+Follows wiki-links to specific files
     ↓
-Lädt nur was gebraucht wird (5-6 Files max)
+Loads only what's needed (5-6 files max)
 ```
 
-### Automatisches Wachstum
-Jeder Agent sollte am Ende einer Session prüfen:
-1. Entscheidung getroffen? → `Decisions/`
-2. Neues Wissen erarbeitet? → `Knowledge/`
-3. Neue Person erwähnt? → `People/`
-4. Projektstatus geändert? → Update Projekt-File
-5. Learning/Fehler? → `AI-Learnings/AI Regeln.md`
-6. Irgendwas geändert? → `Changelog.md`
+### Automatic Growth
+Every agent should check at the end of a session:
+1. Decision made? → `Decisions/`
+2. New knowledge created? → `Knowledge/`
+3. New person mentioned? → `People/`
+4. Project status changed? → Update project file
+5. Mistake or learning? → `AI-Learnings/AI Rules.md`
+6. Anything changed? → `Changelog.md`
 
-## Neues Projekt erstellen
+## Creating a New Project
 
-1. Kopiere `Projects/.template/` → `Projects/Dein-Projekt/`
-2. Benenne die Files um und fülle sie aus
-3. Verlinke das Projekt in `VAULT.md` und `Home.md`
-4. Nicht jedes Projekt braucht alle Files — erstelle nur was du brauchst
+1. Copy `Projects/.template/` → `Projects/Your-Project/`
+2. Fill in the files — not every project needs all of them
+3. Link the project in `VAULT.md`
+4. See `Projects/Example-SaaS/` for a filled example
 
-## Agent-Integration
+## Agent Integration
 
-Füge eine Zeile in die Config deines AI-Tools ein:
+Add one line to your AI tool's config:
 
-| Tool | Config | Zeile |
-|------|--------|-------|
-| Claude Code | `CLAUDE.md` | `Lies zuerst: /pfad/zu/VAULT.md` |
-| Codex | `AGENTS.md` | `Lies zuerst: /pfad/zu/VAULT.md` |
-| Cursor | `.cursorrules` | `Lies zuerst: /pfad/zu/VAULT.md` |
+| Tool | Config File | Line |
+|------|------------|------|
+| Claude Code | `CLAUDE.md` | `Read first: /path/to/VAULT.md` |
+| Codex | `AGENTS.md` | `Read first: /path/to/VAULT.md` |
+| Cursor | `.cursorrules` | `Read first: /path/to/VAULT.md` |
+| Hermes Agent | `config.yaml` | Set vault path in Obsidian skill |
 
-Egal welches Tool morgen kommt — solange es Markdown lesen kann, funktioniert es mit diesem Vault.
+Any tool that can read Markdown works with this vault. No lock-in.
 
-## Was du brauchst
+## Requirements
 
-### Minimum (startet sofort)
-- **[Obsidian](https://obsidian.md)** — Kostenlos, local-first, alle Plattformen
-- **Ein AI-Tool** — Egal welches (Claude Code, Codex, Cursor, ChatGPT, etc.)
-- Mehr brauchst du nicht. Der Vault ist plain Markdown.
+### Minimum (start immediately)
+- **[Obsidian](https://obsidian.md)** — Free, local-first, all platforms
+- **Any AI tool** — Claude Code, Codex, Cursor, ChatGPT, anything
+- That's it. The vault is plain Markdown.
 
-### Optional (macht es mächtiger)
-Die AI-Landschaft ändert sich ständig. Hier die **Prinzipien**, nicht die Tools:
+### Optional (makes it more powerful)
 
-| Prinzip | Warum | Beispiele (Stand 2026) |
-|---------|-------|----------------------|
-| **AI Coding Agent** | Liest/schreibt deinen Vault, führt Aufgaben aus | Claude Code, Codex CLI, Cursor |
-| **Web-Zugriff** | Agent kann recherchieren und Wissen in den Vault schreiben | Perplexity MCP, Firecrawl MCP, oder eingebaute Web-Tools |
-| **Plattform-Anbindung** | Direkter Zugriff auf Plattformen die du nutzt | Twitter MCP, Slack MCP, oder API-Integrationen |
-| **Automatisierung** | Vault wächst automatisch (Reports, Digests) | Cron Jobs, LaunchAgents, GitHub Actions |
+| Capability | Why | Examples (2026) |
+|-----------|-----|----------------|
+| **AI coding agent** | Reads/writes your vault, executes tasks | Claude Code, Codex CLI, Cursor |
+| **Web access** | Agent can research and write findings to vault | Perplexity MCP, Firecrawl MCP, built-in web tools |
+| **Platform access** | Direct access to platforms you use | Twitter MCP, Slack MCP, API integrations |
+| **Automation** | Vault grows automatically (reports, digests) | Cron jobs, GitHub Actions, LaunchAgents |
+| **Git sync** | Vault syncs between machines | Obsidian Git plugin, or manual git |
 
-**Wichtig:** MCP-Server, Plugins und Tools kommen und gehen. Der Vault selbst ist davon unabhängig — er funktioniert auch wenn du alles manuell machst. Automatisierung ist nice-to-have, nicht Voraussetzung.
+### Recommended Obsidian Plugins
+- **Git** — Auto-sync vault via Git (essential for multi-device)
+- **Templater** — Use the project templates more efficiently
+- **Dataview** — Query your vault like a database
+- **Calendar** — Daily notes integration
 
-## Prinzipien
+## Principles
 
-- **Tool-agnostisch** — Plain Markdown, keine proprietären Formate
-- **Agent-first** — Struktur optimiert für AI-Navigation
-- **Organisches Wachstum** — Fang klein an, wächst mit der Zeit
-- **Wikilinks** — `[[Verlinkung]]` ist wichtiger als Ordnerstruktur
-- **YAGNI** — Erstelle Ordner und Files erst wenn du sie brauchst
+- **Tool-agnostic** — Plain Markdown, no proprietary formats
+- **Agent-first** — Structure optimised for AI navigation
+- **Organic growth** — Start small, grows over time
+- **Wiki-links** — `[[Links]]` matter more than folder structure
+- **YAGNI** — Create folders and files only when you need them
+- **One source of truth** — If it's not in the vault, it doesn't exist
 
 ## Credits
 
-Basiert auf dem VAULT.md Pattern, inspiriert von:
-- [Skill Graphs](https://linas.substack.com/p/skill-graphs) — Vernetztes Wissen für AI-Agents
-- [Karpathy's LLM Wiki Pattern](https://x.com/karpathy) — Wissen das über Sessions akkumuliert
-- [Obsidian](https://obsidian.md) — Local-first Markdown Knowledge Management
+Inspired by:
+- [Skill Graphs](https://linas.substack.com/p/skill-graphs) — Networked knowledge for AI agents
+- [Karpathy's LLM Wiki Pattern](https://x.com/karpathy) — Knowledge that accumulates across sessions
+- [Obsidian](https://obsidian.md) — Local-first Markdown knowledge management
+
+## License
+
+MIT — see [LICENSE](LICENSE)

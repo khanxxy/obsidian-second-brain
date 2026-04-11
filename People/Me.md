@@ -1,21 +1,21 @@
-# [Dein Name]
+# [Your Name]
 
-> Ein Satz über dich.
+> One sentence about yourself.
 
-## Profil
-- Standort:
-- Sprachen:
-- Hintergrund:
+## Profile
+- Location:
+- Languages:
+- Background:
 
-## Stimme & Stil
-_Wie kommunizierst du? Wie sollen Agents in deinem Namen schreiben?_
-- Tonalität:
-- Sprache:
+## Voice & Style
+_How do you communicate? How should agents write on your behalf?_
+- Tone:
+- Language:
 - Do's:
 - Don'ts:
 
-## Projekte
+## Projects
 - [[Projects/...]]
 
-## Interessen
+## Interests
 - ...

@@ -1,10 +1,10 @@
 # People
 
-> Alle Personen in deinem Netzwerk. Verlinkt aus Projekten.
+> Everyone in your network. Linked from projects.
 
-## Ich
-- [[Me]] — Dein Profil, Stimme, Stil
+## Me
+- [[Me]] — Your profile, voice, style
 
 ## Team
-_Füge hier dein Team hinzu:_
-- [[Name]] — Rolle
+_Add your team here:_
+- [[Name]] — Role

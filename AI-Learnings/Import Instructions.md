@@ -1,113 +1,103 @@
 ---
 tags: [ai-learnings, import, instructions]
-created: 2026-04-11
 ---
 
 # Import Instructions
 
-> Diese Datei erklärt jedem AI-Agent wie er Chat-Verläufe und Projektwissen in diesen Vault importiert.
-> Funktioniert mit: Claude Desktop, ChatGPT, Gemini, oder jedem Tool das Markdown schreiben kann.
+> How any AI agent imports chat histories and project knowledge into this vault.
+> Works with: Claude Desktop, ChatGPT, Gemini, or any tool that can write Markdown.
 
-## Wann importieren?
+## When to Import
 
-Wenn der User sagt:
+When the user says:
 - "export to vault"
-- "in Obsidian speichern"
 - "save to second brain"
-- "ins Vault schreiben"
+- "write to obsidian"
 
-## WICHTIG: Reihenfolge beachten (Tool-Limits!)
+## Important: Order Matters (Tool Limits)
 
-Manche Tools haben ein Limit an Tool-Aufrufen pro Nachricht. Deshalb:
-1. **Changelog ZUERST** schreiben (klein, schnell)
-2. **People-Files** erstellen (klein)
-3. **Grosse Wissens-Files** zum Schluss (die dürfen abgeschnitten werden — der User kann "weiter" sagen)
+Some tools have a limit on tool calls per message. So:
+1. **Changelog FIRST** (small, fast)
+2. **People files** (small)
+3. **Large knowledge files** last (can be continued if cut off)
 
-## Wie importieren?
+## How to Import
 
-### Schritt 1: Vault-Struktur verstehen
-Lies `VAULT.md` im Vault um die Struktur zu verstehen.
+### Step 1: Read Vault Structure
+Read `VAULT.md` to understand the structure.
 
-### Schritt 2: Wissen extrahieren (NOCH NICHT SCHREIBEN)
-Fasse das wichtigste Wissen aus dem Chat/Projekt im Kopf zusammen:
-- **Fakten & Erkenntnisse** — Was wurde gelernt?
-- **Entscheidungen** — Was wurde entschieden und warum?
-- **Personen** — Wer wurde erwähnt?
-- **Action Items** — Was muss noch gemacht werden?
-- **Fehler & Learnings** — Was lief schief, was haben wir gelernt?
+### Step 2: Extract Knowledge (DON'T WRITE YET)
+Mentally summarise the key knowledge from the chat:
+- **Facts & insights** — What was learned?
+- **Decisions** — What was decided and why?
+- **People** — Who was mentioned?
+- **Action items** — What needs to be done?
+- **Mistakes & learnings** — What went wrong, what did we learn?
 
-### Schritt 3: Changelog ZUERST schreiben
-Lies `Changelog.md`, dann füge den neuen Eintrag OBEN ein (nach dem Header):
+### Step 3: Write Changelog FIRST
+Read `Changelog.md`, then add the new entry at the TOP (after the header):
 ```
-## YYYY-MM-DD ([Projektname] Import)
+## YYYY-MM-DD ([Project] Import)
 ### Import
-- [Tool] Projekt "[Name]" → [Ziel-Pfad]
-### Was wurde importiert?
-- Kurze Beschreibung
+- [Tool] project "[Name]" → [target path]
+### What was imported?
+- Brief description
 ```
 
-### Schritt 4: Am richtigen Ort speichern
+### Step 4: Save to the Right Place
 
-| Inhalt | Wohin | Beispiel |
-|--------|-------|---------|
-| Projekt-spezifisch | `Projects/[Projekt]/` | HLC-Beratungstipps → `Projects/HLC/` |
-| Allgemeines Wissen | `Knowledge/[Thema]/` | AI-Tool Vergleich → `Knowledge/AI/` |
-| Neue Person | `People/[Name].md` | Neuer Kontakt → `People/` |
-| Entscheidung | `Decisions/[Datum-Thema].md` | Architektur-Wahl → `Decisions/` |
-| AI-Regel/Learning | `AI-Learnings/AI Regeln.md` | Neues Feedback → anhängen |
-| Unklar | `Inbox/` | Unsortiertes → `Inbox/` |
+| Content | Where | Example |
+|---------|-------|---------|
+| Project-specific | `Projects/[Project]/` | Marketing plan → `Projects/My-SaaS/` |
+| General knowledge | `Knowledge/[Topic]/` | AI tool comparison → `Knowledge/AI/` |
+| New person | `People/[Name].md` | New contact → `People/` |
+| Decision | `Decisions/[Date-Topic].md` | Architecture choice → `Decisions/` |
+| AI rule/learning | `AI-Learnings/AI Rules.md` | Append to existing |
+| Unclear | `Inbox/` | Unsorted → `Inbox/` |
 
-### Schritt 5: Datei-Format
+### Step 5: File Format
 
 ```markdown
 ---
-tags: [relevante, tags]
-source: [Tool] — [Projekt/Chat Name]
+tags: [relevant, tags]
+source: [Tool] — [Project/Chat Name]
 exported: YYYY-MM-DD
 ---
 
-# Titel
+# Title
 
-## Zusammenfassung
-Kernaussagen in 3-5 Bullet Points.
+## Summary
+Key points in 3-5 bullets.
 
 ## Details
-[Ausführlicher Inhalt, strukturiert mit Überschriften]
+[Detailed content, structured with headings]
 
-## Entscheidungen
-- Entscheidung X weil Y
+## Decisions
+- Decision X because Y
 
-## Offene Punkte
+## Open Items
 - [ ] Todo 1
 - [ ] Todo 2
 
-## Verknüpfungen
-- [[Verwandte Notiz]]
+## Links
+- [[Related Note]]
 - [[Person]]
 ```
 
-### Schritt 6: Verknüpfen
-- Nutze `[[Wikilinks]]` um mit bestehendem Wissen zu verknüpfen
-- Prüfe ob es bereits eine Notiz zum Thema gibt — ergänze statt dupliziere
-- Verlinke erwähnte Personen mit `[[People/Name]]`
+### Step 6: Connect
+- Use `[[wiki-links]]` to connect with existing knowledge
+- Check if a note on the topic already exists — extend rather than duplicate
+- Link mentioned people with `[[People/Name]]`
 
-### Schritt 7: Fertig
-Changelog wurde bereits in Schritt 3 geschrieben. Prüfe ob alles verlinkt ist.
+## Tips by Tool
 
-## Tipps für den User
+### Claude Code / Codex / Cursor
+Say "export to vault" — the agent has file access and can write directly.
 
-### Claude Desktop
-Sage in jedem Projekt: "export to vault"
-Claude hat via Obsidian MCP Zugriff und kann direkt schreiben.
+### ChatGPT / Gemini (no file access)
+1. Say: "Summarise everything important from this chat in the following format: [format above]"
+2. Copy the output
+3. Create a .md file in the vault manually, or hand it to an agent with file access
 
-### ChatGPT
-1. Sage: "Fasse alles wichtige aus diesem Chat zusammen im folgenden Format: [Format von oben]"
-2. Kopiere das Ergebnis
-3. Erstelle manuell eine .md Datei im Vault, oder paste es Claude Code
-
-### Gemini
-Gleich wie ChatGPT — zusammenfassen lassen, dann manuell oder via Agent in den Vault.
-
-### Bulk Import (viele Chats)
-Exportiere Chat-Verläufe als JSON/Markdown (alle Tools bieten das an).
-Lass einen Agent die Dateien lesen und nach obigem Schema einsortieren.
+### Bulk Import (many chats)
+Export chat histories as JSON/Markdown (all tools offer this). Let an agent read and sort them using the schema above.

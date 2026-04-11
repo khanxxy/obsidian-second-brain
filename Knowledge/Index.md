@@ -1,10 +1,10 @@
 # Knowledge
 
-> Gesammeltes Wissen, thematisch sortiert. Überlebt Projekte.
+> Collected knowledge, sorted by topic. Outlives projects.
 
-_Erstelle Unterordner nach deinen Themen. Beispiele:_
-- `Knowledge/AI/` — wenn du dich für AI interessierst
-- `Knowledge/Finance/` — wenn du dich für Finanzen interessierst
-- `Knowledge/Health/` — wenn Gesundheit ein Thema ist
+_Create subfolders as you need them. Examples:_
+- `Knowledge/AI/` — AI tools, models, workflows
+- `Knowledge/Finance/` — Markets, investing, accounting
+- `Knowledge/Health/` — Research, protocols, data
 
-_Keine Kategorien vorgegeben — erstelle was du brauchst._
+_No categories pre-defined — create what you need._

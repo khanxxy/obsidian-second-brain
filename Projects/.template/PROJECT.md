@@ -1,21 +1,21 @@
-# [Projektname]
+# [Project Name]
 
-> Ein Satz was dieses Projekt ist.
+> One sentence about what this project is.
 
-## Status: [Aktiv / Pausiert / Abgeschlossen]
+## Status: [Active / Paused / Completed]
 
-## Kontext
-_Worum geht's, warum existiert das, seit wann?_
+## Context
+_What is it, why does it exist, since when?_
 
 ## Team
-- [[Me]] — Rolle
-- [[Person]] — Rolle
+- [[Me]] — Role
+- [[Person]] — Role
 
-## Kernlinks
-- [[Voice]] — Wie dieses Projekt kommuniziert
-- [[ICP]] — Für wen (Zielgruppe)
-- [[Services]] — Was angeboten wird
+## Key Links
+- [[Voice]] — How this project communicates
+- [[ICP]] — Target audience
+- [[Services]] — What's offered
 
-## Externe Referenzen
+## External References
 - Website:
 - Repo:
