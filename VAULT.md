@@ -9,6 +9,9 @@
 ## Regeln für Agents
 → [[AI-Learnings/AI Regeln]]
 
+## Import aus anderen Tools
+→ [[AI-Learnings/Import Instructions]] — Wie Chat-Verläufe (Claude, ChatGPT, Gemini) in diesen Vault importiert werden
+
 ## Projekte
 | Projekt | Status | Einstieg |
 |---------|--------|----------|
