@@ -1,18 +1,18 @@
-# [Project] — Ideal Customer Profile
+# [Projekt] — Ideal Customer Profile
 
-> Who this project serves.
+> Für wen dieses Projekt existiert.
 
-## Demographics
-_Who are they?_
+## Demografie
+_Wer sind sie?_
 
-## Pain Points
-_What's their problem?_
+## Schmerzpunkte
+_Was ist ihr Problem?_
 
-## Decision Factors
-_What convinces them?_
+## Entscheidungsfaktoren
+_Was überzeugt sie?_
 
-## Common Questions
-_What do they ask most often?_
+## Häufige Fragen
+_Was fragen sie am häufigsten?_
 
 ## Anti-Persona
-_Who is NOT the target audience and why?_
+_Wer ist NICHT die Zielgruppe und warum?_

@@ -1,10 +1,14 @@
 # People
 
-> Everyone in your network. Linked from projects.
+> Alle Personen in deinem Netzwerk. Verlinkt aus Projekten.
 
-## Me
-- [[Me]] — Your profile, voice, style
+## Ich
+- [[Ich]] — Dein Profil, Stimme, Stil
 
 ## Team
-_Add your team here:_
-- [[Name]] — Role
+_Füge dein Team hinzu:_
+- [[Name]] — Rolle
+
+## Kontakte (Messaging)
+→ `People/users/` — Kontakte aus Telegram, WhatsApp etc.
+→ [[People/users/template]] — Template für neue Kontakte
