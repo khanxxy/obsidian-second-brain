@@ -1,18 +1,22 @@
-# My Second Brain
+# Home
 
-> All knowledge, all projects, all decisions. One place.
-
-## For Agents → [[VAULT]]
-
-## What's New? → [[Changelog]]
+> Mein Second Brain. Alles Wissen, alle Projekte, alle Entscheidungen.
 
 ---
 
-## Projects
-- [[Projects/Example-SaaS/Example-SaaS|Example SaaS Project]]
+## Was ist neu? → [[Changelog]]
 
-## Knowledge → [[Knowledge/Index]]
+## Für Agents → [[VAULT]]
+
+---
+
+## Projekte
+- [[Projects/Beispiel-Projekt/Beispiel-Projekt|Beispiel-Projekt]] — Dein erstes Projekt
+
+## Wissen → [[Knowledge/Index]]
 ## People → [[People/Index]]
-## Decisions → [[Decisions/Index]]
+## Entscheidungen → [[Decisions/Index]]
 ## Agents → [[Agents/Index]]
-## Inbox → Inbox/
+
+## Inbox
+→ Inbox/ — Unverarbeitetes, wird einsortiert

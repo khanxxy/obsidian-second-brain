@@ -1,34 +1,33 @@
-# Contributing
+# Mitmachen
 
-Thanks for your interest in the Obsidian Second Brain template.
+Danke für dein Interesse am Obsidian Second Brain Template.
 
-## How to Contribute
+## Wie beitragen
 
-### Report Issues
-- Open an issue if something is unclear, broken, or could be better
-- Include which AI tool you're using (Claude, Codex, Cursor, etc.)
+### Probleme melden
+- Erstelle ein Issue wenn etwas unklar, kaputt oder verbesserbar ist
+- Erwähne welches AI-Tool du nutzt (Claude, Codex, Cursor, etc.)
 
-### Suggest Improvements
-- Open an issue with the label `enhancement`
-- Describe the problem and your proposed solution
+### Verbesserungen vorschlagen
+- Erstelle ein Issue mit dem Label `enhancement`
+- Beschreibe das Problem und deinen Lösungsvorschlag
 
-### Submit Changes
-1. Fork the repo
-2. Create a branch (`git checkout -b improve-templates`)
-3. Make your changes
-4. Submit a pull request
+### Änderungen einreichen
+1. Repo forken
+2. Branch erstellen (`git checkout -b verbessere-templates`)
+3. Änderungen machen
+4. Pull Request einreichen
 
-## Guidelines
+## Richtlinien
 
-- **Keep it tool-agnostic** — No tool-specific features in the core template
-- **Plain Markdown only** — No Obsidian-specific plugins required for core functionality
-- **English first** — All template content in English
-- **Minimal by default** — Users add complexity, we don't impose it
-- **Test with an AI agent** — Make sure an agent can navigate your changes starting from VAULT.md
+- **Tool-agnostisch bleiben** — Keine tool-spezifischen Features im Kern-Template
+- **Nur Plain Markdown** — Keine Obsidian-Plugins für Kernfunktionalität erforderlich
+- **Minimal by Default** — User fügen Komplexität hinzu, wir zwingen sie nicht auf
+- **Mit AI-Agent testen** — Sicherstellen dass ein Agent deine Änderungen ab VAULT.md navigieren kann
 
-## What We're Looking For
+## Was wir suchen
 
-- Better templates for specific use cases (freelancer, researcher, startup, etc.)
-- Translations (maintain a `/i18n/` folder)
-- Documentation improvements
-- Agent integration examples for different tools
+- Bessere Templates für spezifische Use Cases (Freelancer, Researcher, Startup, etc.)
+- Übersetzungen
+- Dokumentations-Verbesserungen
+- Agent-Integrations-Beispiele für verschiedene Tools

@@ -1,14 +1,17 @@
 # Changelog
 
-> Every change is logged here. Newest first.
-> AI agents update this file automatically at the end of each session.
+> Jede Änderung wird hier festgehalten. Neueste zuerst.
+> AI-Agents aktualisieren diese Datei automatisch am Ende jeder Session.
 
 ---
 
 ## YYYY-MM-DD
 
-### New Files
+### Neue Dateien
 - ...
 
-### What Happened?
+### Aktualisierte Dateien
+- ...
+
+### Was ist passiert?
 - ...

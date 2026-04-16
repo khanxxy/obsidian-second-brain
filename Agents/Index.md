@@ -1,40 +1,55 @@
 # Agents
 
-> All AI agents, their configuration, MCP servers, and automated tasks.
+> Alle automatischen Agents, ihre Zeitpläne, Scripts und Konfiguration.
+> Letzte Aktualisierung: YYYY-MM-DD
 
-## Active Agents
+## Dashboard
+- **[[Agents/Active Bots]]** — Live-Feed aller Bot-Runs nach Datum
 
-| Agent | Tool | Purpose |
-|-------|------|---------|
-| _Example_ | _Claude Code_ | _Daily research, vault maintenance_ |
+## Konfiguration
+- [[Agents/MCP Stack]] — Alle MCPs, Config, Troubleshooting
+- [[AI-Learnings/AI Regeln]] — Regeln für alle Agents
 
-## MCP Servers
+---
 
-Configure Model Context Protocol servers to give your agents superpowers:
+## Zeitpläne
 
-| Server | What It Does | Config |
-|--------|-------------|--------|
-| Obsidian | Read/write vault notes | Local MCP |
-| Firecrawl | Scrape websites | API key required |
-| Perplexity | Deep research with sources | API key required |
-| Twitter/X | Read/post tweets | OAuth required |
+| Agent | Zeitplan | Script | Output |
+|-------|----------|--------|--------|
+| _Beispiel: AI Digest_ | _Täglich 9:00_ | _~/Scripts/ai-digest/_ | _[[Projects/...]]_ |
+| _Beispiel: Vault Sync_ | _Alle 5 Min_ | _~/Scripts/vault-sync.sh_ | _—_ |
 
-_Add your MCP configs here as you set them up._
+---
 
-## Automated Tasks
+## Agent-Details
 
-| Task | Schedule | Agent | Description |
-|------|----------|-------|-------------|
-| _Example_ | _Daily 9:00_ | _Haiku_ | _Morning briefing_ |
+### Beispiel-Agent
+- **Was:** Beschreibung des Agents
+- **Script:** `~/Scripts/agent-name/run.sh`
+- **LaunchAgent / Cron:** `com.user.agent-name.plist` oder Crontab
+- **Output:** `~/Vault/Projects/.../YYYY-MM-DD.md`
+- **Logs:** `~/Scripts/agent-name/output.log` / `error.log`
+- **APIs:** Welche APIs werden genutzt?
 
-## Agent Rules
-→ [[AI-Learnings/AI Rules]]
+> Kopiere diesen Block für jeden neuen Agent.
 
-## Cost Tracking
+---
 
-Track your API spend across providers:
+## LaunchAgents (macOS)
 
-| Provider | Budget | Current | Alert At |
-|----------|--------|---------|----------|
-| _Anthropic_ | _$100/mo_ | _$--_ | _$80_ |
-| _OpenRouter_ | _$50/mo_ | _$--_ | _$40_ |
+Alle Plists unter `~/Library/LaunchAgents/`:
+
+| Datei | Agent |
+|-------|-------|
+| _com.user.agent-name.plist_ | _Agent Name_ |
+
+> **Linux/VPS:** Crontab verwenden statt LaunchAgents.
+
+---
+
+## Kosten-Tracking
+
+| Provider | Budget | Aktuell | Alert bei |
+|----------|--------|---------|-----------|
+| _Anthropic_ | _$100/Mo_ | _$--_ | _$80_ |
+| _OpenRouter_ | _$50/Mo_ | _$--_ | _$40_ |

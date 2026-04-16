@@ -1,16 +1,16 @@
-# [Project] Services
+# [Projekt] — Angebot
 
-> What's offered.
+> Was angeboten wird.
 
-## Offerings
+## Leistungen
 
-### Service 1
-- Description:
-- For whom:
-- Price:
+### Leistung 1
+- Beschreibung:
+- Für wen:
+- Preis:
 
 ## USPs
-_What sets you apart?_
+_Was unterscheidet dich?_
 
-## Pricing Model
-_How is it billed?_
+## Preismodell
+_Wie wird abgerechnet?_

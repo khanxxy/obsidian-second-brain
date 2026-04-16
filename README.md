@@ -1,150 +1,180 @@
 # Obsidian Second Brain
 
-A universal Second Brain template for Obsidian — optimised for AI agent collaboration.
+Ein universelles Second-Brain-Template für Obsidian — optimiert für die Zusammenarbeit mit AI-Agents.
 
-Your knowledge, projects, decisions — one place. Any AI agent reads `VAULT.md` and navigates itself to the right context. No plugins required. Plain Markdown.
+Dein Wissen, deine Projekte, deine Entscheidungen — an einem Ort. Jeder AI-Agent liest `VAULT.md` und navigiert sich selbst zum richtigen Kontext. Keine Plugins nötig. Nur Markdown.
 
-## Why This Exists
+## Warum das existiert
 
-AI agents (Claude Code, Codex, Cursor, Copilot, etc.) are powerful — but they forget everything between sessions. This vault is their long-term memory. Yours too.
+AI-Agents (Claude Code, Codex, Cursor, Copilot, etc.) sind mächtig — aber sie vergessen alles zwischen Sessions. Dieser Vault ist ihr Langzeitgedächtnis. Und deins auch.
 
-The **VAULT.md pattern** gives every agent a single entry point. From there, it follows wiki-links to load only what it needs. No context window wasted on irrelevant files.
+Das **VAULT.md Pattern** gibt jedem Agent einen einzigen Einstiegspunkt. Von dort folgt er Wiki-Links und lädt nur was er braucht. Kein Context Window verschwendet auf irrelevante Dateien.
 
 ## Quick Start
 
-1. Click **"Use this template"** on GitHub (or clone the repo)
-2. Open the folder in [Obsidian](https://obsidian.md) → Manage Vaults → Open folder as vault
-3. Fill in `People/Me.md` — your profile, voice, preferences
-4. Create your first project — copy `Projects/.template/` and customise
-5. Tell your AI agent: **"Read VAULT.md first"**
+1. Klicke **"Use this template"** auf GitHub (oder klone das Repo)
+2. Öffne den Ordner in [Obsidian](https://obsidian.md) → Vaults verwalten → Ordner als Vault öffnen
+3. Fülle `People/Ich.md` aus — dein Profil, Stimme, Präferenzen
+4. Erstelle dein erstes Projekt — kopiere `Projects/.template/` und passe es an
+5. Sag deinem AI-Agent: **"Lies zuerst VAULT.md"**
 
-That's it. The vault grows organically from there.
+Das war's. Der Vault wächst organisch von dort.
 
-## Structure
+## Struktur
 
 ```
-VAULT.md                  ← Agent entry point (read this first)
-Home.md                   ← Your personal dashboard
-Changelog.md              ← What changed and when
+VAULT.md                    ← Agent-Einstiegspunkt (zuerst lesen)
+Home.md                     ← Dein persönliches Dashboard
+Changelog.md                ← Was sich wann geändert hat
 
-People/                   ← You and your network
+Briefings/                  ← Tägliche Zusammenfassungen
+  Index.md                  ← Feed aller Briefings
+  template.md               ← Vorlage für neue Briefings
+
+People/                     ← Du und dein Netzwerk
   Index.md
-  Me.md                   ← Your profile, voice, style
+  Ich.md                    ← Dein Profil, Stimme, Stil
+  users/                    ← Messaging-Kontakte (Telegram, WhatsApp)
+    template.md
 
-Projects/                 ← Your projects
-  .template/              ← Copy this to start a new project
-    PROJECT.md            ← Project overview
-    Voice.md              ← How this project communicates
-    ICP.md                ← Target audience
-    Services.md           ← What's offered
-  Example-SaaS/           ← Filled example to show the pattern
+Projects/                   ← Deine Projekte
+  .template/                ← Kopiere das für neue Projekte
+    PROJECT.md              ← Projektübersicht
+    Voice.md                ← Wie das Projekt kommuniziert
+    ICP.md                  ← Zielgruppe
+    Services.md             ← Was angeboten wird
+  Beispiel-Projekt/         ← Ausgefülltes Beispiel
 
-Knowledge/                ← Your knowledge (create subfolders as needed)
+Knowledge/                  ← Dein Wissen (Unterordner nach Bedarf)
   Index.md
 
-Decisions/                ← Why you decided what you decided
+Decisions/                  ← Warum du entschieden hast was du entschieden hast
   Index.md
 
-Agents/                   ← AI agent configs, MCP servers, automations
-  Index.md
+Agents/                     ← AI-Agent-Configs, MCP-Server, Automatisierungen
+  Index.md                  ← Zeitpläne, Agent-Details
+  Active Bots.md            ← Live-Feed aller Bot-Runs
+  MCP Stack.md              ← MCP-Server Konfiguration
 
-AI-Learnings/             ← Rules for AI agents (learned from mistakes)
-  AI Rules.md
+AI-Learnings/               ← Regeln für AI-Agents (aus Fehlern gelernt)
+  AI Regeln.md
   Import Instructions.md
 
-Inbox/                    ← Drop zone for unsorted notes
+Inbox/                      ← Ablage für unsortierte Notizen
 ```
 
-## How It Works
+## Wie es funktioniert
 
-### For You
-- Drop ideas, notes, thoughts into `Inbox/`
-- Your AI agent sorts them into the right place
-- Fill your projects step by step — or let the agent do it
+### Für dich
+- Ideen, Notizen, Gedanken in `Inbox/` ablegen
+- Dein AI-Agent sortiert sie an den richtigen Ort
+- Projekte Schritt für Schritt füllen — oder den Agent machen lassen
 
-### For AI Agents
+### Für AI-Agents
 ```
-Agent receives task
+Agent bekommt Aufgabe
     ↓
-Reads VAULT.md
+Liest VAULT.md
     ↓
-Follows link to relevant section
+Folgt Link zur relevanten Sektion
     ↓
-Reads Index.md of that section
+Liest Index.md dieser Sektion
     ↓
-Follows wiki-links to specific files
+Folgt Wiki-Links zu spezifischen Dateien
     ↓
-Loads only what's needed (5-6 files max)
+Lädt nur was nötig ist (5-6 Dateien max)
 ```
 
-### Automatic Growth
-Every agent should check at the end of a session:
-1. Decision made? → `Decisions/`
-2. New knowledge created? → `Knowledge/`
-3. New person mentioned? → `People/`
-4. Project status changed? → Update project file
-5. Mistake or learning? → `AI-Learnings/AI Rules.md`
-6. Anything changed? → `Changelog.md`
+### Automatisches Wachstum
+Jeder Agent prüft am Ende einer Session:
+1. Entscheidung getroffen? → `Decisions/`
+2. Neues Wissen erstellt? → `Knowledge/`
+3. Neue Person erwähnt? → `People/`
+4. Projektstatus geändert? → Projektdatei updaten
+5. Fehler oder Learning? → `AI-Learnings/AI Regeln.md`
+6. Irgendetwas geändert? → `Changelog.md`
 
-## Creating a New Project
+### Briefings
+Das Briefing-System gibt dir eine tägliche Übersicht:
+- Was ist heute passiert? (Sessions + Bot-Runs)
+- Highlights und offene Punkte
+- Kopiere `Briefings/template.md` für ein neues Briefing
 
-1. Copy `Projects/.template/` → `Projects/Your-Project/`
-2. Fill in the files — not every project needs all of them
-3. Link the project in `VAULT.md`
-4. See `Projects/Example-SaaS/` for a filled example
+## Neues Projekt erstellen
+
+1. Kopiere `Projects/.template/` → `Projects/Dein-Projekt/`
+2. Dateien ausfüllen — nicht jedes Projekt braucht alle
+3. Projekt in `VAULT.md` verlinken
+4. Siehe `Projects/Beispiel-Projekt/` für ein ausgefülltes Beispiel
 
 ## Agent Integration
 
-Add one line to your AI tool's config:
+Füge eine Zeile in die Config deines AI-Tools ein:
 
-| Tool | Config File | Line |
-|------|------------|------|
-| Claude Code | `CLAUDE.md` | `Read first: /path/to/VAULT.md` |
-| Codex | `AGENTS.md` | `Read first: /path/to/VAULT.md` |
-| Cursor | `.cursorrules` | `Read first: /path/to/VAULT.md` |
-| Hermes Agent | `config.yaml` | Set vault path in Obsidian skill |
+| Tool | Config-Datei | Zeile |
+|------|-------------|-------|
+| Claude Code | `CLAUDE.md` | `Lies zuerst: /pfad/zu/VAULT.md` |
+| Codex | `AGENTS.md` | `Lies zuerst: /pfad/zu/VAULT.md` |
+| Cursor | `.cursorrules` | `Lies zuerst: /pfad/zu/VAULT.md` |
 
-Any tool that can read Markdown works with this vault. No lock-in.
+Jedes Tool das Markdown lesen kann funktioniert mit diesem Vault. Kein Lock-in.
 
-## Requirements
+## Agents & Automatisierung
 
-### Minimum (start immediately)
-- **[Obsidian](https://obsidian.md)** — Free, local-first, all platforms
-- **Any AI tool** — Claude Code, Codex, Cursor, ChatGPT, anything
-- That's it. The vault is plain Markdown.
+Dieses Template enthält eine vollständige Infrastruktur für automatische Agents:
 
-### Optional (makes it more powerful)
+- **`Agents/Index.md`** — Zentrale Übersicht aller Agents mit Zeitplänen
+- **`Agents/Active Bots.md`** — Live-Dashboard aller Bot-Runs
+- **`Agents/MCP Stack.md`** — MCP-Server Setup und Troubleshooting
 
-| Capability | Why | Examples (2026) |
-|-----------|-----|----------------|
-| **AI coding agent** | Reads/writes your vault, executes tasks | Claude Code, Codex CLI, Cursor |
-| **Web access** | Agent can research and write findings to vault | Perplexity MCP, Firecrawl MCP, built-in web tools |
-| **Platform access** | Direct access to platforms you use | Twitter MCP, Slack MCP, API integrations |
-| **Automation** | Vault grows automatically (reports, digests) | Cron jobs, GitHub Actions, LaunchAgents |
-| **Git sync** | Vault syncs between machines | Obsidian Git plugin, or manual git |
+### Beispiele für Agents
+| Agent | Was er tut | Zeitplan |
+|-------|-----------|----------|
+| AI Digest | Tägliche AI-News kuratieren | Täglich 9:00 |
+| Vault Sync | Git-Sync zwischen Geräten | Alle 5 Min |
+| Research Bot | Automatische Recherche zu Themen | Nach Bedarf |
 
-### Recommended Obsidian Plugins
-- **Git** — Auto-sync vault via Git (essential for multi-device)
-- **Templater** — Use the project templates more efficiently
-- **Dataview** — Query your vault like a database
-- **Calendar** — Daily notes integration
+Agents können via **LaunchAgents** (macOS), **Cron** (Linux), oder **GitHub Actions** ausgeführt werden.
 
-## Principles
+## Voraussetzungen
 
-- **Tool-agnostic** — Plain Markdown, no proprietary formats
-- **Agent-first** — Structure optimised for AI navigation
-- **Organic growth** — Start small, grows over time
-- **Wiki-links** — `[[Links]]` matter more than folder structure
-- **YAGNI** — Create folders and files only when you need them
-- **One source of truth** — If it's not in the vault, it doesn't exist
+### Minimum (sofort starten)
+- **[Obsidian](https://obsidian.md)** — Kostenlos, local-first, alle Plattformen
+- **Irgendein AI-Tool** — Claude Code, Codex, Cursor, ChatGPT, egal was
+- Das war's. Der Vault ist reines Markdown.
+
+### Optional (macht es mächtiger)
+
+| Fähigkeit | Warum | Beispiele |
+|-----------|-------|-----------|
+| **AI Coding Agent** | Liest/schreibt deinen Vault, führt Aufgaben aus | Claude Code, Codex CLI, Cursor |
+| **Web-Zugang** | Agent kann recherchieren und Ergebnisse in Vault schreiben | Perplexity MCP, Firecrawl MCP |
+| **Plattform-Zugang** | Direkter Zugriff auf Plattformen die du nutzt | Twitter MCP, Slack MCP, API-Integrationen |
+| **Automatisierung** | Vault wächst automatisch (Reports, Digests) | Cron Jobs, GitHub Actions, LaunchAgents |
+| **Git Sync** | Vault synchronisiert zwischen Geräten | Obsidian Git Plugin, oder manuelles Git |
+
+### Empfohlene Obsidian Plugins
+- **Git** — Auto-Sync via Git (essenziell für Multi-Device)
+- **Templater** — Projekt-Templates effizienter nutzen
+- **Dataview** — Vault wie eine Datenbank abfragen
+- **Calendar** — Daily Notes Integration
+
+## Prinzipien
+
+- **Tool-agnostisch** — Reines Markdown, keine proprietären Formate
+- **Agent-first** — Struktur optimiert für AI-Navigation
+- **Organisches Wachstum** — Klein starten, wächst mit der Zeit
+- **Wiki-Links** — `[[Links]]` sind wichtiger als Ordnerstruktur
+- **YAGNI** — Ordner und Dateien nur erstellen wenn du sie brauchst
+- **Eine Source of Truth** — Wenn es nicht im Vault steht, existiert es nicht
 
 ## Credits
 
-Inspired by:
-- [Skill Graphs](https://linas.substack.com/p/skill-graphs) — Networked knowledge for AI agents
-- [Karpathy's LLM Wiki Pattern](https://x.com/karpathy) — Knowledge that accumulates across sessions
-- [Obsidian](https://obsidian.md) — Local-first Markdown knowledge management
+Inspiriert von:
+- [Skill Graphs](https://linas.substack.com/p/skill-graphs) — Vernetztes Wissen für AI-Agents
+- [Karpathy's LLM Wiki Pattern](https://x.com/karpathy) — Wissen das über Sessions akkumuliert
+- [Obsidian](https://obsidian.md) — Local-first Markdown Wissensmanagement
 
-## License
+## Lizenz
 
-MIT — see [LICENSE](LICENSE)
+MIT — siehe [LICENSE](LICENSE)

@@ -1,11 +1,11 @@
-# Decisions
+# Entscheidungen
 
-> Why you decided what you decided. So you (and your agents) don't repeat the same mistakes.
+> Warum du entschieden hast was du entschieden hast. Damit du (und deine Agents) nicht die gleichen Fehler wiederholst.
 
-_Format per decision:_
+_Format pro Entscheidung:_
 ```
-# [Title]
-## Decision — What was decided?
-## Alternatives — What was rejected and why?
-## Consequences — What follows from this?
+# [Titel]
+## Entscheidung — Was wurde entschieden?
+## Alternativen — Was wurde abgelehnt und warum?
+## Konsequenzen — Was folgt daraus?
 ```

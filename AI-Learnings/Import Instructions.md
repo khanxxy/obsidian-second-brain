@@ -4,100 +4,100 @@ tags: [ai-learnings, import, instructions]
 
 # Import Instructions
 
-> How any AI agent imports chat histories and project knowledge into this vault.
-> Works with: Claude Desktop, ChatGPT, Gemini, or any tool that can write Markdown.
+> Wie AI-Agents Chat-Verläufe und Projektwissen in diesen Vault importieren.
+> Funktioniert mit: Claude Code, Codex, Cursor, ChatGPT, Gemini oder jedem Tool das Markdown schreiben kann.
 
-## When to Import
+## Wann importieren?
 
-When the user says:
-- "export to vault"
-- "save to second brain"
-- "write to obsidian"
+Wenn der User sagt:
+- "exportiere in den Vault"
+- "speichere im Second Brain"
+- "schreib in Obsidian"
 
-## Important: Order Matters (Tool Limits)
+## Wichtig: Reihenfolge beachten (Tool-Limits)
 
-Some tools have a limit on tool calls per message. So:
-1. **Changelog FIRST** (small, fast)
-2. **People files** (small)
-3. **Large knowledge files** last (can be continued if cut off)
+Manche Tools haben ein Limit an Tool-Calls pro Nachricht. Deshalb:
+1. **Changelog ZUERST** (klein, schnell)
+2. **People-Dateien** (klein)
+3. **Grosse Wissensdateien** zuletzt (können fortgesetzt werden falls abgebrochen)
 
-## How to Import
+## So funktioniert der Import
 
-### Step 1: Read Vault Structure
-Read `VAULT.md` to understand the structure.
+### Schritt 1: Vault-Struktur lesen
+`VAULT.md` lesen um die Struktur zu verstehen.
 
-### Step 2: Extract Knowledge (DON'T WRITE YET)
-Mentally summarise the key knowledge from the chat:
-- **Facts & insights** — What was learned?
-- **Decisions** — What was decided and why?
-- **People** — Who was mentioned?
-- **Action items** — What needs to be done?
-- **Mistakes & learnings** — What went wrong, what did we learn?
+### Schritt 2: Wissen extrahieren (NOCH NICHT SCHREIBEN)
+Mental zusammenfassen was wichtig ist:
+- **Fakten & Erkenntnisse** — Was wurde gelernt?
+- **Entscheidungen** — Was wurde entschieden und warum?
+- **Personen** — Wer wurde erwähnt?
+- **Action Items** — Was muss noch getan werden?
+- **Fehler & Learnings** — Was ging schief, was haben wir gelernt?
 
-### Step 3: Write Changelog FIRST
-Read `Changelog.md`, then add the new entry at the TOP (after the header):
+### Schritt 3: Changelog ZUERST schreiben
+`Changelog.md` lesen, dann neuen Eintrag OBEN hinzufügen (nach dem Header):
 ```
-## YYYY-MM-DD ([Project] Import)
+## YYYY-MM-DD ([Projekt] Import)
 ### Import
-- [Tool] project "[Name]" → [target path]
-### What was imported?
-- Brief description
+- [Tool] Projekt "[Name]" → [Zielpfad]
+### Was wurde importiert?
+- Kurze Beschreibung
 ```
 
-### Step 4: Save to the Right Place
+### Schritt 4: Am richtigen Ort speichern
 
-| Content | Where | Example |
-|---------|-------|---------|
-| Project-specific | `Projects/[Project]/` | Marketing plan → `Projects/My-SaaS/` |
-| General knowledge | `Knowledge/[Topic]/` | AI tool comparison → `Knowledge/AI/` |
-| New person | `People/[Name].md` | New contact → `People/` |
-| Decision | `Decisions/[Date-Topic].md` | Architecture choice → `Decisions/` |
-| AI rule/learning | `AI-Learnings/AI Rules.md` | Append to existing |
-| Unclear | `Inbox/` | Unsorted → `Inbox/` |
+| Inhalt | Wohin | Beispiel |
+|--------|-------|----------|
+| Projekt-spezifisch | `Projects/[Projekt]/` | Marketing-Plan → `Projects/Mein-SaaS/` |
+| Allgemeines Wissen | `Knowledge/[Thema]/` | AI-Tool-Vergleich → `Knowledge/AI/` |
+| Neue Person | `People/[Name].md` | Neuer Kontakt → `People/` |
+| Entscheidung | `Decisions/[Datum-Thema].md` | Architektur-Wahl → `Decisions/` |
+| AI Regel/Learning | `AI-Learnings/AI Regeln.md` | An bestehende Datei anhängen |
+| Unklar | `Inbox/` | Unsortiert → `Inbox/` |
 
-### Step 5: File Format
+### Schritt 5: Datei-Format
 
 ```markdown
 ---
-tags: [relevant, tags]
-source: [Tool] — [Project/Chat Name]
+tags: [relevante, tags]
+source: [Tool] — [Projekt/Chat-Name]
 exported: YYYY-MM-DD
 ---
 
-# Title
+# Titel
 
-## Summary
-Key points in 3-5 bullets.
+## Zusammenfassung
+Kernpunkte in 3-5 Bullets.
 
 ## Details
-[Detailed content, structured with headings]
+[Detaillierter Inhalt, strukturiert mit Überschriften]
 
-## Decisions
-- Decision X because Y
+## Entscheidungen
+- Entscheidung X weil Y
 
-## Open Items
+## Offene Punkte
 - [ ] Todo 1
 - [ ] Todo 2
 
 ## Links
-- [[Related Note]]
+- [[Verwandte Notiz]]
 - [[Person]]
 ```
 
-### Step 6: Connect
-- Use `[[wiki-links]]` to connect with existing knowledge
-- Check if a note on the topic already exists — extend rather than duplicate
-- Link mentioned people with `[[People/Name]]`
+### Schritt 6: Verknüpfen
+- `[[Wiki-Links]]` nutzen um mit bestehendem Wissen zu verbinden
+- Prüfen ob eine Notiz zum Thema schon existiert — ergänzen statt duplizieren
+- Erwähnte Personen mit `[[People/Name]]` verlinken
 
-## Tips by Tool
+## Tipps nach Tool
 
 ### Claude Code / Codex / Cursor
-Say "export to vault" — the agent has file access and can write directly.
+Sag "exportiere in den Vault" — der Agent hat Dateizugriff und kann direkt schreiben.
 
-### ChatGPT / Gemini (no file access)
-1. Say: "Summarise everything important from this chat in the following format: [format above]"
-2. Copy the output
-3. Create a .md file in the vault manually, or hand it to an agent with file access
+### ChatGPT / Gemini (kein Dateizugriff)
+1. Sag: "Fasse alles Wichtige aus diesem Chat zusammen in folgendem Format: [Format oben]"
+2. Output kopieren
+3. .md-Datei im Vault manuell erstellen, oder einem Agent mit Dateizugriff übergeben
 
-### Bulk Import (many chats)
-Export chat histories as JSON/Markdown (all tools offer this). Let an agent read and sort them using the schema above.
+### Bulk Import (viele Chats)
+Chat-Verläufe als JSON/Markdown exportieren (alle Tools bieten das an). Einen Agent lesen und einsortieren lassen.
