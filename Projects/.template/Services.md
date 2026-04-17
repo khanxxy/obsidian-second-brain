@@ -1,6 +1,6 @@
 # [Projekt] — Angebot
 
-> Was angeboten wird.
+> Was angeboten wird und wie der Nutzen fuer Kunden aussieht.
 
 ## Leistungen
 
@@ -8,6 +8,7 @@
 - Beschreibung:
 - Für wen:
 - Preis:
+- Ergebnis:
 
 ## USPs
 _Was unterscheidet dich?_

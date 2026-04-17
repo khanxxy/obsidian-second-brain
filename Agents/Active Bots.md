@@ -4,7 +4,8 @@ tags: [agents, dashboard]
 
 # Active Bots
 
-> Chronologischer Feed aller Bot-Runs. Wird automatisch aktualisiert.
+> Chronologischer Feed aller Bot-Runs.
+> Wenn du keine Bots hast, bleibt diese Datei leer.
 
 ---
 
@@ -13,7 +14,7 @@ tags: [agents, dashboard]
 | Bot | Zeitplan | Status |
 |-----|----------|--------|
 | _Beispiel: AI Digest_ | _Täglich 9:00_ | _aktiv_ |
-| _Beispiel: Vault Sync_ | _Alle 5 Min_ | _aktiv_ |
+| _Beispiel: Research Bot_ | _Nach Bedarf_ | _aktiv_ |
 
 ---
 

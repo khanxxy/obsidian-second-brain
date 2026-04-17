@@ -1,6 +1,6 @@
 # [Projektname]
 
-> Ein Satz was dieses Projekt ist.
+> Ein Satz, was dieses Projekt ist und warum es existiert.
 
 ## Status: [Aktiv / Pausiert / Abgeschlossen]
 
@@ -16,9 +16,13 @@ _Was ist es, warum existiert es, seit wann?_
 - [[ICP]] — Zielgruppe
 - [[Services]] — Was angeboten wird
 
+## Nächster sinnvoller Schritt
+- ...
+
 ## Externe Referenzen
 - Website:
 - Repo:
+- Drive / Docs:
 
 ## Metriken
 | Metrik | Aktuell | Ziel |

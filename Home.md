@@ -1,22 +1,27 @@
 # Home
 
-> Mein Second Brain. Alles Wissen, alle Projekte, alle Entscheidungen.
+> Leeres Second-Brain-Setup fuer Menschen und AI-Agents.
 
----
+## Start hier
+1. [[People/Ich]] ausfuellen
+2. [[AI-Learnings/AI Regeln]] lesen und anpassen
+3. Erstes Projekt ueber [[Projects/Index]] anlegen
+4. Erstes Tagesbriefing ueber [[! Briefings/template]] schreiben
+5. Optional: [[Agents/Vault Sync]] aktivieren, wenn mehrere Geraete oder Agents mitschreiben
 
-## Was ist neu? → [[Changelog]]
+## Navigation
+- [[VAULT]] — Zentraler Einstiegspunkt
+- [[Changelog]] — Systemaenderungen im Vault
+- [[! Briefings/Index]] — Tageschronik
+- [[Projects/Index]] — Projekte und Templates
+- [[Knowledge/Index]] — Wissenssammlung
+- [[People/Index]] — Personen und Kontakte
+- [[Decisions/Index]] — Entscheidungen
+- [[Agents/Index]] — Agenten und Automationen
+- [[Inbox/README]] — Eingangsbereich
 
-## Für Agents → [[VAULT]]
-
----
-
-## Projekte
-- [[Projects/Beispiel-Projekt/Beispiel-Projekt|Beispiel-Projekt]] — Dein erstes Projekt
-
-## Wissen → [[Knowledge/Index]]
-## People → [[People/Index]]
-## Entscheidungen → [[Decisions/Index]]
-## Agents → [[Agents/Index]]
-
-## Inbox
-→ Inbox/ — Unverarbeitetes, wird einsortiert
+## Leerer Startzustand
+- Keine echten Projekte
+- Keine persoenlichen Daten
+- Keine Reports oder Kundendateien
+- Nur Struktur, Templates und Regeln

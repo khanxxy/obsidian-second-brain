@@ -1,6 +1,6 @@
 # [Projekt] — Stimme
 
-> Wie dieses Projekt kommuniziert. Für jeden Agent der Inhalte erstellt.
+> Wie dieses Projekt kommuniziert. Fuer jeden Agent, der Texte, Mails, Landingpages oder Notizen erstellt.
 
 ## Ton
 _Wie soll die Kommunikation klingen?_
@@ -18,4 +18,4 @@ _Welche Sprache(n), welcher Stil?_
 - ...
 
 ## Beispiele
-_Echte Beispiele guter Kommunikation einfügen._
+_Wenn moeglich spaeter echte gute Texte verlinken._

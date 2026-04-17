@@ -1,38 +1,33 @@
 # VAULT.md
 
-> Dein Second Brain. Source of Truth für alle AI-Agents.
-> Jeder Agent liest diese Datei zuerst. Navigiere von hier.
+> Der Einstiegspunkt fuer Menschen und AI-Agents.
+> Erst diese Datei lesen, dann den Links folgen.
 
-## Briefing
-→ [[Briefings/Index]] — Was heute passiert ist (Sessions + Bots)
+## Start
+- [[Home]] — Dashboard und erste Schritte
+- [[AI-Learnings/AI Regeln]] — Arbeitsregeln fuer Agents
+- [[Changelog]] — Was sich im Vault geaendert hat
 
----
+## Tageskontext
+- [[! Briefings/Index]] — Sessions, Entscheidungen und Bot-Runs nach Datum
 
-## Wer bist du?
-→ [[People/Ich]]
-
-## Regeln für Agents
-→ [[AI-Learnings/AI Regeln]]
-
-## Import aus anderen Tools
-→ [[AI-Learnings/Import Instructions]] — Chat-Verläufe (Claude, ChatGPT, Gemini) in diesen Vault importieren
+## Du
+- [[People/Ich]] — Profil, Schreibstil, Praeferenzen
+- [[People/Index]] — Team, Kontakte, Netzwerk
 
 ## Projekte
-| Projekt | Status | Einstieg |
-|---------|--------|----------|
-| Beispiel-Projekt | Aktiv | [[Projects/Beispiel-Projekt/Beispiel-Projekt]] |
+- [[Projects/Index]] — Alle aktiven Projekte und die Projektvorlage
 
 ## Wissen
-→ [[Knowledge/Index]]
-
-## People
-→ [[People/Index]]
-
-## Entscheidungen
-→ [[Decisions/Index]]
+- [[Knowledge/Index]] — Themenwissen, das ueber Projekte hinaus relevant bleibt
+- [[Decisions/Index]] — Entscheidungslogik und Trade-offs
 
 ## Agents
-→ [[Agents/Index]]
+- [[Agents/Index]] — Automationen, MCPs, Agent-Setups
+- [[Agents/Vault Sync]] — Git-Workflow fuer Multi-Device- oder Multi-Agent-Setups
+
+## Import
+- [[AI-Learnings/Import Instructions]] — Externe Chats, Mails oder Dokumente in den Vault uebernehmen
 
 ## Inbox
-→ Inbox/ — Unverarbeitetes, wird einsortiert
+- [[Inbox/README]] — Unsortierte Eingaben, Rohideen und Sammelstelle

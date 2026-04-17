@@ -4,8 +4,6 @@
 .obsidian/plugins/
 .obsidian/themes/
 .obsidian/hotkeys.json
-.obsidian/appearance.json
-.obsidian/graph.json
 .obsidian/bookmarks.json
 .trash/
 
@@ -15,4 +13,7 @@ Thumbs.db
 
 # Keep these Obsidian configs (tracked intentionally)
 # .obsidian/app.json
+# .obsidian/core-plugins.json
 # .obsidian/community-plugins.json
+# .obsidian/appearance.json
+# .obsidian/graph.json

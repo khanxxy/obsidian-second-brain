@@ -1,7 +1,7 @@
 # Changelog
 
-> Jede Änderung wird hier festgehalten. Neueste zuerst.
-> AI-Agents aktualisieren diese Datei automatisch am Ende jeder Session.
+> Systemlog fuer diesen Vault.
+> Hier landen Struktur- und Template-Aenderungen, nicht jede Tagesarbeit.
 
 ---
 
@@ -11,6 +11,9 @@
 - ...
 
 ### Aktualisierte Dateien
+- ...
+
+### Geloeschte Dateien
 - ...
 
 ### Was ist passiert?

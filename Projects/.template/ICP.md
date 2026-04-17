@@ -11,6 +11,9 @@ _Was ist ihr Problem?_
 ## Entscheidungsfaktoren
 _Was überzeugt sie?_
 
+## Kauftrigger
+_Wann wird aus Interesse Handlung?_
+
 ## Häufige Fragen
 _Was fragen sie am häufigsten?_
 

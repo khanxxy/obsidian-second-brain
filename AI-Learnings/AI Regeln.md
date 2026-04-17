@@ -4,23 +4,22 @@ tags: [ai-learnings, regeln, feedback]
 
 # AI Regeln & Learnings
 
-> Regeln für alle AI-Agents (Claude Code, Codex, Cursor, etc.).
-> Tool-agnostisch: Gilt für jeden Agent, egal welches Tool.
-> Aus Fehlern gelernt — hier steht was funktioniert.
+> Regeln fuer alle AI-Agents, die in diesem Vault arbeiten.
+> Tool-agnostisch und fuer ein leeres Template optimiert.
 
 ---
 
-## 1. VAULT.md zuerst lesen
+## 1. AGENTS.md und VAULT.md zuerst lesen
 
-Jede Aufgabe beginnt mit `VAULT.md`. Von dort navigieren. Nicht die Vault-Struktur raten — den Links folgen.
+Wenn im Repo eine `AGENTS.md` liegt, lies sie zuerst. Danach immer `VAULT.md`. Nicht die Struktur raten, sondern den Links folgen.
 
-**Warum:** Agents die das überspringen verschwenden Context auf irrelevante Dateien oder erstellen Duplikate.
+**Warum:** So bleiben Verhalten, Ton und Navigationslogik konsistent.
 
 ---
 
 ## 2. Wissen zurückschreiben
 
-Wenn du Wissen produziert, eine Entscheidung getroffen oder etwas entdeckt hast — schreib es in den Vault bevor die Session endet.
+Wenn du Wissen produziert, eine Entscheidung getroffen oder etwas entdeckt hast, schreib es in den Vault bevor die Session endet.
 
 **Wohin:**
 - Wissen → `Knowledge/`
@@ -29,27 +28,27 @@ Wenn du Wissen produziert, eine Entscheidung getroffen oder etwas entdeckt hast 
 - Learning → diese Datei
 - Alles → `Changelog.md`
 
-**Warum:** Was nicht im Vault steht, existiert nicht. Die nächste Session hat keinen Zugriff auf dein Chat-Fenster.
+**Warum:** Was nicht im Vault steht, ist fuer die naechste Session verloren.
 
 ---
 
 ## 3. Verlinken statt Duplizieren
 
-Bevor du eine neue Datei erstellst, prüfe ob schon eine zum Thema existiert. Wenn ja, ergänze sie. Nutze `[[Wiki-Links]]` um Notizen zu verbinden.
+Bevor du eine neue Datei erstellst, pruefe ob schon eine zum Thema existiert. Wenn ja, erweitere sie. Nutze `[[Wiki-Links]]` statt Copy-Paste.
 
-**Warum:** Duplikate erzeugen Verwirrung. Verlinkte Notizen erzeugen einen Knowledge Graph.
+**Warum:** Duplikate erzeugen Drift. Verlinkte Notizen erzeugen Kontext.
 
 ---
 
 ## 4. Templates benutzen
 
-Neues Projekt? Kopiere `Projects/.template/`. Erfinde nicht jedes Mal eine neue Struktur.
+Neues Projekt? Nutze `Projects/.template/`. Neue Tagesnotiz? Nutze `! Briefings/template.md`. Neue Entscheidung? Nutze `Decisions/template.md`.
 
 ---
 
 ## 5. Changelog ist Pflicht
 
-Jede Session die den Vault verändert muss einen Eintrag in `Changelog.md` hinzufügen. Keine Ausnahmen.
+Jede Session, die den Vault strukturell veraendert, braucht einen Eintrag in `Changelog.md`.
 
 **Format:**
 ```
@@ -64,55 +63,68 @@ Jede Session die den Vault verändert muss einen Eintrag in `Changelog.md` hinzu
 
 Neueste Einträge immer oben.
 
-**Warum:** Wenn du den Vault öffnest, siehst du nicht was neu ist. Changelog ist der Einstiegspunkt.
+**Warum:** Der Changelog ist das Systemlog des Vaults.
 
 ---
 
-## 6. Nicht über-organisieren
+## 6. Briefing und Changelog trennen
 
-Eine Notiz in `Inbox/` ist besser als keine Notiz. Einsortieren passiert später.
+**Briefing** in `! Briefings/`
+- taegliche Sessions
+- Ergebnisse
+- offene Schleifen
+- naechste Schritte
 
----
+**Changelog** in `Changelog.md`
+- neue Dateien
+- geloeschte Dateien
+- strukturelle Aenderungen
+- groessere Template-Updates
 
-## 7. MCP Tool Priority
-
-Bei Links zu Plattformen mit dediziertem MCP → **immer zuerst den dedizierten MCP nutzen**. Generische Tools (Firecrawl, Perplexity) nur als Fallback.
-
-**Reihenfolge:**
-1. Plattform-spezifischer MCP (Twitter, Analytics, Trading, etc.)
-2. Generische Scraping/Research Tools als Fallback
-
-**Warum:** Dedizierte MCPs sind schneller, zuverlässiger und haben authentifizierten Zugriff. Generische Tools blockieren oft oder liefern unvollständige Daten.
-
----
-
-## 8. MCP Installation
-
-Neue MCP-Server immer sauber installieren:
-
-**Checkliste:**
-1. Vor Installation alle benötigten API Keys bereithalten
-2. Alles in einem Befehl: `claude mcp add <name> -s user -e KEY=val -- <command>`
-3. `-s user` für globale Verfügbarkeit
-4. Nie einen MCP Server ohne seine Keys installieren
-5. Nach Installation verifizieren
-6. Volle Pfade verwenden (z.B. `/opt/homebrew/bin/npx` statt `npx`)
-7. Symlinks vorher auflösen
-
-**Warum:** Jedes Mal wenn ein MCP ohne Keys installiert wird → startet nicht, Tools fehlen, manuelles Debugging nötig.
+**Warum:** Briefing ist Tageslog, Changelog ist Systemlog.
 
 ---
 
-## 9. Git Author Privacy
+## 7. Nicht ueber-organisieren
 
-Bei Public Repos immer anonymen Commit-Autor verwenden. Nie echten Namen oder lokale Email.
+Eine Notiz in `Inbox/` ist besser als gar keine Notiz. Struktur folgt spaeter.
+
+---
+
+## 8. MCP- oder Native-Tools gezielt nutzen
+
+Wenn es fuer eine Plattform ein natives Tool oder einen dedizierten MCP gibt, nutze ihn zuerst. Generische Recherche- oder Scraping-Tools nur als Fallback.
+
+**Warum:** Dedizierte Zugriffe sind meist schneller und konsistenter.
+
+---
+
+## 9. Obsidian direkt als Dateisystem behandeln
+
+Dieser Vault funktioniert als Markdown-Struktur. Wenn ein Agent direkt auf Dateien schreiben kann, ist das oft besser als Plugin-Magie.
+
+**Warum:** Weniger versteckte Abhaengigkeiten, weniger Fehlerquellen.
+
+---
+
+## 10. Git-Sync bewusst behandeln
+
+Wenn mehrere Geraete oder Agents denselben Vault schreiben, ist `origin/main` der gemeinsame Stand. Vor Aenderungen pullen, danach committen und pushen. Siehe [[Agents/Vault Sync]].
+
+**Warum:** Sonst driften lokale Kopien auseinander.
+
+---
+
+## 11. Git Author Privacy
+
+Bei Public Repos immer anonymen Commit-Autor verwenden. Nie persoenliche Mailadresse committen.
 
 **Nutzen:** `username <username@users.noreply.github.com>`
 
 **Prüfen:** `git log --format="%an <%ae> | %cn <%ce>" -1`
 
-**Warum:** Google indexiert Git-Commit-Autoren. Echter Name + lokale Email werden öffentlich sichtbar.
+**Warum:** Commit-Metadaten sind oeffentlich sichtbar und indexierbar.
 
 ---
 
-_Füge unten deine eigenen Regeln hinzu, sobald du lernst was mit deinen Agents funktioniert._
+_Erweitere diese Datei, sobald du im echten Alltag neue Regeln lernst._

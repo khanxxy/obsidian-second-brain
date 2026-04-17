@@ -1,18 +1,19 @@
 # Agents
 
-> Alle automatischen Agents, ihre Zeitpläne, Scripts und Konfiguration.
-> Letzte Aktualisierung: YYYY-MM-DD
+> Uebersicht aller Agents, Automationen und Tool-Setups.
+> Diese Sektion ist optional. Wenn du keine Bots nutzt, kann sie fast leer bleiben.
 
 ## Dashboard
 - **[[Agents/Active Bots]]** — Live-Feed aller Bot-Runs nach Datum
 
 ## Konfiguration
 - [[Agents/MCP Stack]] — Alle MCPs, Config, Troubleshooting
+- [[Agents/Vault Sync]] — Git-Workflow fuer mehrere Geraete oder Agents
 - [[AI-Learnings/AI Regeln]] — Regeln für alle Agents
 
 ---
 
-## Zeitpläne
+## Zeitplaene
 
 | Agent | Zeitplan | Script | Output |
 |-------|----------|--------|--------|
@@ -35,15 +36,16 @@
 
 ---
 
-## LaunchAgents (macOS)
+## LaunchAgents oder Cron
 
-Alle Plists unter `~/Library/LaunchAgents/`:
+macOS:
+- `~/Library/LaunchAgents/`
 
-| Datei | Agent |
-|-------|-------|
-| _com.user.agent-name.plist_ | _Agent Name_ |
+Linux / VPS:
+- `crontab -e`
+- `systemd --user`
 
-> **Linux/VPS:** Crontab verwenden statt LaunchAgents.
+Fuehre hier nur die Jobs auf, die du wirklich benutzt.
 
 ---
 

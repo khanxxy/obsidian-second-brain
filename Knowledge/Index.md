@@ -1,6 +1,6 @@
 # Wissen
 
-> Gesammeltes Wissen, sortiert nach Thema. Überlebt Projekte.
+> Gesammeltes Wissen, das ueber einzelne Projekte hinaus relevant bleibt.
 
 _Erstelle Unterordner nach Bedarf. Beispiele:_
 - `Knowledge/AI/` — AI-Tools, Modelle, Workflows
@@ -8,4 +8,4 @@ _Erstelle Unterordner nach Bedarf. Beispiele:_
 - `Knowledge/Gesundheit/` — Forschung, Protokolle, Daten
 - `Knowledge/Tech/` — Programmierung, Infrastruktur, DevOps
 
-_Keine Kategorien vordefiniert — erstelle was du brauchst._
+_Keine Kategorien sind verpflichtend. Starte klein und ergaenze erst bei echtem Bedarf._

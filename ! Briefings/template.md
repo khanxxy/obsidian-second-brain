@@ -15,6 +15,9 @@ date: YYYY-MM-DD
 |-----|--------|--------|
 | | | |
 
+## Entscheidungen
+- ...
+
 ## Highlights
 - ...
 

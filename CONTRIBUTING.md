@@ -23,6 +23,7 @@ Danke für dein Interesse am Obsidian Second Brain Template.
 - **Tool-agnostisch bleiben** — Keine tool-spezifischen Features im Kern-Template
 - **Nur Plain Markdown** — Keine Obsidian-Plugins für Kernfunktionalität erforderlich
 - **Minimal by Default** — User fügen Komplexität hinzu, wir zwingen sie nicht auf
+- **Empty by Default** — Keine echten Projekte, Namen, Reports oder privaten Inhalte im Template
 - **Mit AI-Agent testen** — Sicherstellen dass ein Agent deine Änderungen ab VAULT.md navigieren kann
 
 ## Was wir suchen

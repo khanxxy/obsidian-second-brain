@@ -11,6 +11,7 @@ created: YYYY-MM-DD
 - Woher: 
 - Beziehung:
 - Sprache:
+- Relevante Themen:
 
 ## Notizen
 - ...

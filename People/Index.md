@@ -1,12 +1,12 @@
 # People
 
-> Alle Personen in deinem Netzwerk. Verlinkt aus Projekten.
+> Personen, die in Projekten, Entscheidungen oder Kommunikation relevant sind.
 
 ## Ich
 - [[Ich]] — Dein Profil, Stimme, Stil
 
 ## Team
-_Füge dein Team hinzu:_
+_Fuege hier nur echte Personen hinzu, sobald sie relevant werden._
 - [[Name]] — Rolle
 
 ## Kontakte (Messaging)
