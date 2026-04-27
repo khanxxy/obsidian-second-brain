@@ -1,96 +1,144 @@
 # Obsidian Second Brain
 
-Ein leeres, verschickbares Obsidian-Template fuer Menschen und AI-Agents.
+A clean, shippable Obsidian vault template for humans and AI agents.
 
-Keine privaten Projekte. Keine Kundendaten. Keine Beispiel-Businesses.
-Nur eine saubere Struktur, Templates, Regeln und ein klarer Einstiegspunkt.
+No private projects. No client data. No example businesses.
+Just a solid structure, templates, rules, and a clear entry point.
 
-## Was dieses Template loest
+---
 
-AI-Agents verlieren Kontext zwischen Sessions. Menschen auch. Dieses Repo gibt beiden einen stabilen Ort fuer:
+## What this template solves
 
-- Projekte
-- Wissen
-- Entscheidungen
-- Personen
-- Tagesbriefings
-- Agent-Workflows
+AI agents lose context between sessions. Humans too.
+This repo gives both a stable location for:
 
-Der Kern ist simpel:
+- Projects
+- Knowledge
+- Decisions
+- People
+- Daily briefings
+- Agent workflows
 
-1. `AGENTS.md` setzt das Arbeitsverhalten
-2. `VAULT.md` ist der Einstiegspunkt
-3. Wiki-Links fuehren zum relevanten Kontext
+The core is simple:
 
-## Was absichtlich fehlt
+1. `AGENTS.md` defines agent behavior — including mandatory session-end protocol
+2. `VAULT.md` is the entry point
+3. `NOW.md` holds the current state of all projects
+4. Wiki-links lead to the relevant context
 
-- echte Projekte
-- persoenliche Namen
+---
+
+## What is intentionally missing
+
+- Real projects
+- Personal names
 - Reports
-- Kundenbeispiele
-- laufende Tagesnotizen
-- private Workspace-States aus Obsidian
+- Client examples
+- Running daily notes
+- Private Obsidian workspace states
 
-Dieses Repo soll man Freunden schicken koennen, ohne vorher aufraeumen zu muessen.
+This repo should be shareable with friends without needing to clean up first.
+
+---
 
 ## Quick Start
 
-1. Auf GitHub `Use this template` klicken oder das Repo klonen
-2. Ordner in [Obsidian](https://obsidian.md) als Vault oeffnen
-3. `People/Ich.md` ausfuellen
-4. Erstes Projekt aus `Projects/.template/` kopieren
-5. Dem Agent sagen: `Lies zuerst AGENTS.md und VAULT.md`
+1. Click **"Use this template"** on GitHub or clone the repo
+2. Open the folder in [Obsidian](https://obsidian.md) as a vault
+3. Fill in `People/Ich.md` (your profile)
+4. Fill in `NOW.md` (your current projects)
+5. Copy your first project from `Projects/.template/`
+6. Tell any agent: **"Read AGENTS.md and VAULT.md first"**
 
-## Struktur
+---
 
-```text
-AGENTS.md                  ← Verhaltensregeln fuer Agents im Repo
-VAULT.md                   ← zentraler Einstiegspunkt
-Home.md                    ← Dashboard und Startcheckliste
-Changelog.md               ← strukturelle Vault-Aenderungen
+## Structure
 
-! Briefings/               ← Tagesbriefings
+```
+AGENTS.md                  ← Behavior rules for agents (read first)
+VAULT.md                   ← Central entry point
+NOW.md                     ← Current state of all projects
+Home.md                    ← Dashboard and start checklist
+Changelog.md               ← Structural vault changes
+
+! Briefings/               ← Bot runs and daily highlights
   Index.md
   template.md
 
-People/                    ← du, dein Team, deine Kontakte
+Work Log/                  ← Sessions, commits, decisions (one file per day)
+  README.md
+  template.md
+
+People/                    ← You, your team, your contacts
 Projects/
   Index.md
-  .template/               ← Vorlage fuer neue Projekte
+  .template/               ← Template for new projects
+    Context.md             ← Project background and status
+    HANDOFF.md             ← Agent hand-off log (newest on top)
+    ICP.md
+    Voice.md
+    Services.md
 
-Knowledge/                 ← Themenwissen
-Decisions/                 ← Entscheidungslogik
-Agents/                    ← MCPs, Bots, Automationen, Sync-Regeln
-AI-Learnings/              ← Regeln und Learnings fuer Agents
-Inbox/                     ← unsortierte Eingaben
-scripts/                   ← optionale Git-Sync-Helfer fuer Multi-Device-Setups
+Knowledge/                 ← Topic knowledge that lives beyond projects
+Decisions/                 ← Decision logic and trade-offs
+Agents/                    ← MCPs, bots, automations, sync rules
+AI-Learnings/              ← Rules and learnings for agents
+Inbox/                     ← Unsorted inputs
+scripts/                   ← Optional Git sync helpers for multi-device setups
 ```
 
-## Fuer wen das gedacht ist
+---
 
-- Solo-Founder
-- Freelancer
-- Research-lastige Operator
-- Leute mit mehreren AI-Tools
-- Teams, die Wissen in Markdown halten wollen
+## Key patterns
 
-## Prinzipien
+### NOW.md — current state table
+One row per active project. Agents update it at the end of every session.
+Answers the question: *"What is happening right now?"*
 
-- **Empty by default** — keine fremden Inhalte im Startzustand
-- **Agent-first** — klarer Einstieg statt chaotischer Ordnerlandschaft
-- **Markdown only** — kein Plugin-Zwang fuer die Kernfunktion
-- **Minimal setup** — Komplexitaet erst hinzufuegen, wenn sie wirklich gebraucht wird
-- **Git-friendly** — Multi-Device und Multi-Agent koennen sauber synchronisieren
+### HANDOFF.md — agent continuity
+One entry per session, newest on top. Last 5 visible, older in `## Archive`.
+Answers the question: *"What did the last agent do, and what do I do next?"*
 
-## Optional, aber sinnvoll
+### Work Log vs Briefings
+- `Work Log/` → actual project work (commits, code, sessions)
+- `! Briefings/` → bot runs, automated reports, daily highlights
 
-- Obsidian Git Plugin oder normales Git
+---
+
+## Principles
+
+| Principle | Description |
+|-----------|-------------|
+| **Empty by default** | No foreign content in initial state |
+| **Agent-first** | Clear entry point instead of chaotic folder structure |
+| **Continuity built-in** | NOW.md + HANDOFF.md prevent context loss between sessions |
+| **Markdown only** | No plugin dependency for core function |
+| **Minimal setup** | Add complexity only when truly needed |
+| **Git-friendly** | Multi-device and multi-agent sync cleanly |
+
+---
+
+## For whom
+
+- Solo founders
+- Freelancers
+- Research-heavy operators
+- People using multiple AI tools (Claude, Codex, Gemini, Cursor, ...)
+- Teams wanting to keep knowledge in Markdown
+
+---
+
+## Optional but useful
+
+- Obsidian Git Plugin or standard Git
 - Templater
 - Dataview
-- dedizierte MCPs oder API-Tools
+- Dedicated MCPs or API tools
 
-Das Template funktioniert aber auch komplett ohne diese Extras.
+The template works completely without these extras.
 
-## Lizenz
+---
 
-MIT — siehe [LICENSE](LICENSE)
+## License
+
+MIT — see [LICENSE](LICENSE)
