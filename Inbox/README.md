@@ -1,8 +1,15 @@
 # Inbox
 
-> Rohbereich fuer Ideen, Links, Notizen und halbfertige Inputs.
+> Unsorted captures. Process weekly.
 
-Regel:
-- lieber hier ablegen als gar nicht notieren
-- spaeter einsortieren
-- Duplikate spaeter aufraeumen, nicht beim Einfangen blockieren
+Drop anything here: links, ideas, tasks, notes.  
+Once a week: sort into the right folder or delete.
+
+## Rules
+
+- Inbox is temporary — nothing lives here permanently
+- If it's a project → `Projects/`
+- If it's knowledge → `Knowledge/`
+- If it's a decision → `Decisions/`
+- If it's a person → `People/`
+- If it's trash → delete it
