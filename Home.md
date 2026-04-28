@@ -18,7 +18,7 @@
 | Decisions | [[Decisions/Index]] | Decision log |
 | People | [[People/Index]] | Contacts and profiles |
 | Daily log | [[Work Log/README]] | Sessions by day |
-| Briefings | [[! Briefings/Index]] | Bot outputs and news |
+| Briefings | [[Briefings/Index]] | Bot outputs and news |
 
 ## Vault Rules
 
