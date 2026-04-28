@@ -1,11 +1,19 @@
-# Wissen
+# Knowledge
 
-> Gesammeltes Wissen, das ueber einzelne Projekte hinaus relevant bleibt.
+> Permanent reference material. Things that stay true over time.
+> Organized by domain.
 
-_Erstelle Unterordner nach Bedarf. Beispiele:_
-- `Knowledge/AI/` — AI-Tools, Modelle, Workflows
-- `Knowledge/Finanzen/` — Märkte, Investitionen, Buchhaltung
-- `Knowledge/Gesundheit/` — Forschung, Protokolle, Daten
-- `Knowledge/Tech/` — Programmierung, Infrastruktur, DevOps
+## Domains
 
-_Keine Kategorien sind verpflichtend. Starte klein und ergaenze erst bei echtem Bedarf._
+| Domain | Description |
+|--------|-------------|
+| [[Knowledge/AI]] | AI tools, models, workflows |
+| [[Knowledge/Business]] | Strategy, ops, growth |
+| [[Knowledge/Health]] | Health, fitness, longevity |
+| [[Knowledge/Tools]] | Software, systems, setups |
+
+## How to use
+
+- Add a note when you learn something that will matter in 6 months
+- Link from projects when relevant
+- Review quarterly and prune what's no longer true
