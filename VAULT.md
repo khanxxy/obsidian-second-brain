@@ -12,7 +12,7 @@
 - [[NOW]] — What's active right now, next actions, blockers, last agent
 
 ## Daily Context
-- [[! Briefings/Index]] — Bot runs and highlights by date
+- [[Briefings/Index]] — Bot runs and highlights by date
 - [[Work Log/README]] — Sessions, commits, and decisions by day
 
 ## You
