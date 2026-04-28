@@ -1,12 +1,11 @@
-# Entscheidungen
+# Decisions
 
-> Warum du entschieden hast, was du entschieden hast.
-> Hilft dir und deinen Agents, dieselben Diskussionen nicht staendig neu zu fuehren.
+> Log of significant decisions and the reasoning behind them.
+> Use [[Decisions/template]] to create a new entry.
 
-## Vorlage
-- [[Decisions/template]] — Standardformat fuer neue Entscheidungen
+## Index
 
-## Empfehlung
-- Eine Datei pro echter Entscheidung
-- Datum oder Thema im Dateinamen
-- Immer Alternativen und Konsequenzen notieren
+| Date | Decision | Status |
+|------|----------|--------|
+| YYYY-MM-DD | Example decision | Active |
+
