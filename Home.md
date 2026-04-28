@@ -1,30 +1,26 @@
 # Home
 
-> Leeres Second-Brain-Setup fuer Menschen und AI-Agents.
+> Welcome. Start here every session.
 
-## Start hier
-1. [[People/Ich]] ausfuellen
-2. [[AI-Learnings/AI Regeln]] lesen und anpassen
-3. [[NOW]] anlegen — aktuellen Projektstatus eintragen
-4. Erstes Projekt ueber [[Projects/Index]] anlegen
-5. Erstes Tagesbriefing ueber [[! Briefings/template]] schreiben
-6. Optional: [[Agents/Vault Sync]] aktivieren, wenn mehrere Geraete oder Agents mitschreiben
+## Quick Start
+
+1. Read [[NOW]] — what's active, what's next
+2. Read [[AGENTS]] — rules for this vault
+3. Go to the relevant [[Projects/Index|project]]
 
 ## Navigation
-- [[VAULT]] — Zentraler Einstiegspunkt
-- [[NOW]] — Aktueller Stand aller Projekte
-- [[Changelog]] — Systemaenderungen im Vault
-- [[! Briefings/Index]] — Tageschronik (Bots, Highlights)
-- [[Work Log/README]] — Sessions und Code-Arbeit
-- [[Projects/Index]] — Projekte und Templates
-- [[Knowledge/Index]] — Wissenssammlung
-- [[People/Index]] — Personen und Kontakte
-- [[Decisions/Index]] — Entscheidungen
-- [[Agents/Index]] — Agenten und Automationen
-- [[Inbox/README]] — Eingangsbereich
 
-## Leerer Startzustand
-- Keine echten Projekte
-- Keine persoenlichen Daten
-- Keine Reports oder Kundendateien
-- Nur Struktur, Templates und Regeln
+| Area | Link | Purpose |
+|------|------|---------|
+| Current state | [[NOW]] | What's happening right now |
+| Projects | [[Projects/Index]] | All active work |
+| Knowledge | [[Knowledge/Index]] | Permanent reference |
+| Decisions | [[Decisions/Index]] | Decision log |
+| People | [[People/Index]] | Contacts and profiles |
+| Daily log | [[Work Log/README]] | Sessions by day |
+| Briefings | [[! Briefings/Index]] | Bot outputs and news |
+
+## Vault Rules
+
+See [[AGENTS]] for the full protocol.  
+Short version: read `NOW.md` first, update it before you leave.
