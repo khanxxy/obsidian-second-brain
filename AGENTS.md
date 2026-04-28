@@ -1,46 +1,84 @@
 # Agent Rules
 
-Read this file first, then read `VAULT.md`.
+Read this file first. Then read `VAULT.md`. Then read `NOW.md`.
+
+---
 
 ## Navigation
-- Never guess the vault structure.
-- Use `VAULT.md` as the entrypoint.
+
+- Never guess the vault structure — use `VAULT.md` as the entry point.
+- Use `NOW.md` to understand what's currently active before touching anything.
 - Follow wiki-links to the smallest useful context.
+- Check `Projects/<X>/HANDOFF.md` before starting work on any project.
+
+---
 
 ## Editing
-- Keep changes surgical.
+
+- Keep changes surgical. Only touch what's relevant to the task.
 - Do not create duplicate notes if the topic already exists.
 - Update `Changelog.md` when the vault structure changes.
 - Use templates from `Projects/.template/`, `! Briefings/template.md`, and `Decisions/template.md`.
 
+---
+
 ## Daily Flow
-- Daily work belongs in `Work Log/YYYY-MM-DD.md`.
-- Bot runs and highlights belong in `! Briefings/`.
+
+- Daily work sessions belong in `Work Log/YYYY-MM-DD.md`.
+- Bot outputs, news, and briefings belong in `! Briefings/`.
 - Structural changes belong in `Changelog.md`.
 - New durable knowledge belongs in `Knowledge/`, `People/`, `Projects/`, or `Decisions/`.
 
-## Session End — MANDATORY
+---
+
+## Session End — Mandatory Handoff Protocol
 
 Before ending any session, update these three files:
 
-1. **`NOW.md`** — Update the project row: status, next action, blocker, last agent, date.
-2. **`Projects/<X>/HANDOFF.md`** — Add a new entry at the top: what was done, current state, what to do next, watch out. Keep last 5 entries visible, move older ones to `## Archive`.
-3. **`Work Log/YYYY-MM-DD.md`** — Add your session row. Create the file from `Work Log/template.md` if it doesn't exist yet.
+### 1. `NOW.md`
+Update your project row: Status, Next Action, Blocker, your agent name, today's date.
 
-Without these three updates, the session is not finished.
-The next agent (or you tomorrow) will lose context and have to re-discover everything.
+### 2. `Projects/<X>/HANDOFF.md`
+Add a new entry at the top:
 
-## Anti-Hallucination
-- Never answer questions about current project state from memory alone.
-- Always read `NOW.md` first, then the relevant `Projects/<X>/HANDOFF.md`.
-- If you are unsure what file contains the information, follow the links in `VAULT.md`.
-- Never create a new file for something that already exists — search first.
+```
+## YYYY-MM-DD HH:MM — [Agent Name]
+**What was done:** ...
+**Current state:** ...
+**You must do next:** ...
+**Watch out:** ...
+```
+
+Keep the last 5 entries visible. Move older ones to `## Archive`.
+
+### 3. `Work Log/YYYY-MM-DD.md`
+Add your session entry. If today's file doesn't exist, copy from `Work Log/template.md`.
+
+**Without these three updates, the session is not complete.**  
+The next agent — human or AI — will lose context and have to re-discover everything.
+
+---
+
+## Anti-Hallucination Rules
+
+- Never answer questions about current state from memory alone — read the actual file first.
+- Never report success without verifying the result.
+- If you're unsure what's in a file, read it. Do not guess.
+- If a conflict exists in git, stop and report it. Do not overwrite.
+
+---
 
 ## Git
-- If this vault is synced across devices or agents, run `scripts/vault-prep.sh` before edits when available.
-- After edits, run `scripts/vault-finish.sh "vault: short description" <files...>` when available.
-- If conflicts happen, stop and merge carefully instead of overwriting.
+
+- Run `scripts/vault-prep.sh` before edits when available.
+- Run `scripts/vault-finish.sh "vault: short description" <files...>` after edits.
+- If conflicts happen, stop and merge carefully. Never force-push.
+
+---
 
 ## Style
+
+- Write in English. (Exception: user explicitly writes in another language.)
 - Prefer minimal, clear notes over elaborate systems.
-- Do not add complexity unless the user actually needs it.
+- Do not add complexity unless it's actually needed.
+- Short sentences. Active voice.
