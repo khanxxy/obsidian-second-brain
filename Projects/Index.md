@@ -1,19 +1,21 @@
-# Projekte
+# Projects
 
-> Uebersicht aller aktiven und archivierten Projekte.
+> All active and archived projects.
+> Use [[Projects/.template/Context]] and [[Projects/.template/HANDOFF]] when starting a new project.
 
-## Neu starten
+## Active
 
-1. `Projects/.template/` kopieren
-2. Ordner in `Projects/Dein-Projekt/` umbenennen
-3. `PROJECT.md`, `Voice.md`, `ICP.md`, `Services.md` anpassen
-4. Das Projekt hier verlinken
+| Project | Status | Next Action |
+|---------|--------|-------------|
+| [Project Name] | In Progress | ... |
 
-## Aktiv
-- _Noch leer_
+## Paused
 
-## Archiv
-- _Noch leer_
+| Project | Paused Since | Resume When |
+|---------|-------------|-------------|
 
-## Vorlage
-- `Projects/.template/`
+## Done
+
+| Project | Completed |
+|---------|-----------|
+
