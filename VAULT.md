@@ -8,8 +8,12 @@
 - [[AI-Learnings/AI Regeln]] — Arbeitsregeln fuer Agents
 - [[Changelog]] — Was sich im Vault geaendert hat
 
+## Current State
+- [[NOW]] — Was laeuft gerade, naechste Aktionen, Blocker, letzter Agent
+
 ## Tageskontext
-- [[! Briefings/Index]] — Sessions, Entscheidungen und Bot-Runs nach Datum
+- [[! Briefings/Index]] — Bot-Runs und Highlights nach Datum
+- [[Work Log/README]] — Sessions, Commits und Entscheidungen nach Tag
 
 ## Du
 - [[People/Ich]] — Profil, Schreibstil, Praeferenzen

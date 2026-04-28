@@ -5,14 +5,17 @@
 ## Start hier
 1. [[People/Ich]] ausfuellen
 2. [[AI-Learnings/AI Regeln]] lesen und anpassen
-3. Erstes Projekt ueber [[Projects/Index]] anlegen
-4. Erstes Tagesbriefing ueber [[! Briefings/template]] schreiben
-5. Optional: [[Agents/Vault Sync]] aktivieren, wenn mehrere Geraete oder Agents mitschreiben
+3. [[NOW]] anlegen — aktuellen Projektstatus eintragen
+4. Erstes Projekt ueber [[Projects/Index]] anlegen
+5. Erstes Tagesbriefing ueber [[! Briefings/template]] schreiben
+6. Optional: [[Agents/Vault Sync]] aktivieren, wenn mehrere Geraete oder Agents mitschreiben
 
 ## Navigation
 - [[VAULT]] — Zentraler Einstiegspunkt
+- [[NOW]] — Aktueller Stand aller Projekte
 - [[Changelog]] — Systemaenderungen im Vault
-- [[! Briefings/Index]] — Tageschronik
+- [[! Briefings/Index]] — Tageschronik (Bots, Highlights)
+- [[Work Log/README]] — Sessions und Code-Arbeit
 - [[Projects/Index]] — Projekte und Templates
 - [[Knowledge/Index]] — Wissenssammlung
 - [[People/Index]] — Personen und Kontakte
