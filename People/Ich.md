@@ -1,32 +1,28 @@
----
-tags: [person, ich]
----
+# Me
 
-# [Dein Name]
+> Your personal profile for this vault.
+> Agents read this to understand your preferences, working style, and context.
 
-> Ein Satz ueber dich und deine Rolle.
+## Identity
 
-## Profil
-- Standort:
-- Sprachen:
-- Hintergrund:
-- Hardware:
-- Zeitzone:
+- **Name:** 
+- **Location:** 
+- **Timezone:** 
 
-## Stimme & Stil
-_Wie kommunizierst du? Wie sollen Agents in deinem Namen schreiben?_
-- Ton:
-- Sprache:
-- Do's:
-- Don'ts:
+## Working Style
 
-## Entscheidungen & Prioritaeten
-- Womit verbringst du aktuell am meisten Zeit?
-- Welche Dinge sollen Agents zuerst optimieren?
-- Was darf ein Agent nie ohne Rueckfrage tun?
+- Preferred language: English
+- Communication style: Direct, concise
+- Decision speed: Fast, iterate later
 
-## Unternehmen / Projekte
-- [[Projects/...]]
+## Context
 
-## Interessen
-- ...
+- What you're building: 
+- What you care most about: 
+- What you want AI agents to know about you: 
+
+## Preferences
+
+- Tools I use: 
+- Things I hate: 
+- Things that save me time: 
