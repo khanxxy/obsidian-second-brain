@@ -1,37 +1,32 @@
 # VAULT.md
 
-> Der Einstiegspunkt fuer Menschen und AI-Agents.
-> Erst diese Datei lesen, dann den Links folgen.
+> Entry point for humans and AI agents.
+> Read this file first, then follow the links.
 
-## Start
-- [[Home]] — Dashboard und erste Schritte
-- [[AI-Learnings/AI Regeln]] — Arbeitsregeln fuer Agents
-- [[Changelog]] — Was sich im Vault geaendert hat
+## Start Here
+- [[Home]] — Dashboard and quick start
+- [[AGENTS]] — Rules and protocols for AI agents
+- [[Changelog]] — What changed in the vault
 
 ## Current State
-- [[NOW]] — Was laeuft gerade, naechste Aktionen, Blocker, letzter Agent
+- [[NOW]] — What's active right now, next actions, blockers, last agent
 
-## Tageskontext
-- [[! Briefings/Index]] — Bot-Runs und Highlights nach Datum
-- [[Work Log/README]] — Sessions, Commits und Entscheidungen nach Tag
+## Daily Context
+- [[! Briefings/Index]] — Bot runs and highlights by date
+- [[Work Log/README]] — Sessions, commits, and decisions by day
 
-## Du
-- [[People/Ich]] — Profil, Schreibstil, Praeferenzen
-- [[People/Index]] — Team, Kontakte, Netzwerk
+## You
+- [[People/Me]] — Profile, writing style, preferences
+- [[People/Index]] — Team, contacts, relationships
 
-## Projekte
-- [[Projects/Index]] — Alle aktiven Projekte und die Projektvorlage
+## Projects
+- [[Projects/Index]] — All active and archived projects
 
-## Wissen
-- [[Knowledge/Index]] — Themenwissen, das ueber Projekte hinaus relevant bleibt
-- [[Decisions/Index]] — Entscheidungslogik und Trade-offs
+## Knowledge
+- [[Knowledge/Index]] — Permanent knowledge base
 
-## Agents
-- [[Agents/Index]] — Automationen, MCPs, Agent-Setups
-- [[Agents/Vault Sync]] — Git-Workflow fuer Multi-Device- oder Multi-Agent-Setups
-
-## Import
-- [[AI-Learnings/Import Instructions]] — Externe Chats, Mails oder Dokumente in den Vault uebernehmen
+## Decisions
+- [[Decisions/Index]] — Decision log
 
 ## Inbox
-- [[Inbox/README]] — Unsortierte Eingaben, Rohideen und Sammelstelle
+- [[Inbox/README]] — Unsorted captures, process weekly
