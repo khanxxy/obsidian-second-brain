@@ -139,6 +139,18 @@ The template works completely without these extras.
 
 ---
 
+
+
+---
+
+## What's new (v2 — 2026-05-04)
+
+- **AGENTS.md expanded** with: TODO Routing table, Vault-Sync failure-modes (4 known modes with resolutions), Skill System reference
+- **`Knowledge/AI/Karpathy Autoresearch Loop.md`** — pattern doc for "locked rules + mutable application + compounding" (the same principle this template embodies)
+- **`Agents/Skills/your-vault.md`** — template for building a vault-specific skill that auto-loads in Codex CLI / Claude Code / Antigravity / Gemini CLI / GitHub Copilot / Amp
+
+The skill pattern is the missing link between this template and modern AI-agent CLIs: instead of every session re-reading AGENTS.md cold, agents pull a compact skill that activates only when relevant (vault-related tasks). See `Agents/Skills/your-vault.md` for build instructions.
+
 ## License
 
 MIT — see [LICENSE](LICENSE)

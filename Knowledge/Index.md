@@ -17,3 +17,7 @@
 - Add a note when you learn something that will matter in 6 months
 - Link from projects when relevant
 - Review quarterly and prune what's no longer true
+
+## AI Concepts
+
+- [[AI/Karpathy Autoresearch Loop|Karpathy Autoresearch Loop]] — Pattern: Locked Evaluator + Mutable Strategy + Cron-LLM-Agent for autonomous optimization

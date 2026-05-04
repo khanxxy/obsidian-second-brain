@@ -10,6 +10,7 @@
 - [[Agents/MCP Stack]] — Alle MCPs, Config, Troubleshooting
 - [[Agents/Vault Sync]] — Git-Workflow fuer mehrere Geraete oder Agents
 - [[AI-Learnings/AI Regeln]] — Regeln für alle Agents
+- [[Agents/Skills/your-vault]] — Template: how to build a vault-specific skill for skill-capable agents (Codex CLI, Claude Code, etc.)
 
 ---
 
