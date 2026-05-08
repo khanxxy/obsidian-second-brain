@@ -6,6 +6,7 @@ Start here when you open the vault.
 
 ## First Setup
 
+- [ ] Read [[START-HERE]]
 - [ ] Fill in [[People/Me]]
 - [ ] Copy `Projects/.template/` to `Projects/<Your Project>/`
 - [ ] Fill in the new project's `Context.md`

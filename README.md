@@ -4,6 +4,8 @@ An agent-first Obsidian vault template based on a real multi-agent workflow.
 
 Start simple. The full system is already in place for later.
 
+New here? Start with [`START-HERE.md`](START-HERE.md).
+
 ---
 
 ## What This Is
@@ -25,6 +27,8 @@ The template ships empty by design: no private data, no fake businesses, no clie
 ---
 
 ## 30-Minute Setup
+
+The detailed walkthrough is in [`START-HERE.md`](START-HERE.md).
 
 1. Click **Use this template** on GitHub, or clone the repo.
 2. Open the folder in Obsidian.

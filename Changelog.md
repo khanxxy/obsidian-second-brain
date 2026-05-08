@@ -6,6 +6,11 @@ Update this when you change folder structure, rename files, add templates, or ch
 
 ---
 
+## 2026-05-08 - onboarding guide
+
+- Added `START-HERE.md` as the first-time onboarding guide for new users.
+- Linked `START-HERE.md` from `README.md`, `Home.md`, and `VAULT.md`.
+
 ## 2026-05-08 - v3 real-system starter
 
 - Renamed `Work Log/` to `!1 Work Log/`.
