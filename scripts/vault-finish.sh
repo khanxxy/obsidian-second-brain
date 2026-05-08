@@ -8,6 +8,7 @@ fi
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 COMMIT_MESSAGE="$1"
+UPSTREAM="$(git -C "$ROOT_DIR" rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null || true)"
 shift
 
 if [[ $# -gt 0 ]]; then
@@ -22,5 +23,9 @@ if git -C "$ROOT_DIR" diff --cached --quiet; then
 fi
 
 git -C "$ROOT_DIR" commit -m "$COMMIT_MESSAGE"
-git -C "$ROOT_DIR" push origin main
+if [[ -n "$UPSTREAM" ]]; then
+  git -C "$ROOT_DIR" push
+else
+  echo "[vault-finish] no upstream configured; commit kept local, skipping push"
+fi
 git -C "$ROOT_DIR" status --short --branch
