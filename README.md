@@ -6,7 +6,7 @@ Start simple. The full system is already in place for later.
 
 New here? Start with [`START-HERE.md`](START-HERE.md).
 
-Want copy-paste AI prompts? Use [`ASK-CODEX.md`](ASK-CODEX.md).
+Want copy-paste AI prompts? Use [`ASK-AI.md`](ASK-AI.md).
 
 Using an AI agent? Tell it to read `README.md`, `START-HERE.md`, `VAULT.md`, and `AGENTS.md` first. It should explain the workflow and ask for your first project before editing files.
 

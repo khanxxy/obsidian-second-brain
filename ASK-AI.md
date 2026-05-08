@@ -1,6 +1,6 @@
-# Ask Codex
+# Ask Your AI Agent
 
-Copy one of these prompts into Codex, Claude Code, Cursor, or another file-capable AI agent.
+Copy one of these prompts into any file-capable AI agent, such as Codex, Claude Code, Cursor, Gemini CLI, Amp, or another coding assistant.
 
 Use `START-HERE.md` if you want the full human walkthrough.
 
@@ -134,9 +134,9 @@ After installation, verify that ~/.agents/skills/your-vault/SKILL.md exists.
 
 ## Rule Of Thumb
 
-If you are unsure what to ask Codex, use prompt 1 first.
+If you are unsure what to ask your AI agent, use prompt 1 first.
 
-If Codex starts editing before asking about your first real project, stop it and say:
+If the agent starts editing before asking about your first real project, stop it and say:
 
 ```text
 Stop. First explain the vault workflow and ask me for my first project name and goal.

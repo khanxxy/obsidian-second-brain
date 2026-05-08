@@ -8,10 +8,10 @@ Update this when you change folder structure, rename files, add templates, or ch
 
 ## 2026-05-08 - onboarding guide
 
-- Added `ASK-CODEX.md` with copy-paste prompts for setup, first project, continuing work, vault summaries, imports, and skill installation.
+- Added `ASK-AI.md` with copy-paste prompts for setup, first project, continuing work, vault summaries, imports, and skill installation.
 - Added `START-HERE.md` as the first-time onboarding guide for new users.
 - Linked `START-HERE.md` from `README.md`, `Home.md`, and `VAULT.md`.
-- Added an explicit AI-agent onboarding protocol so Codex/Claude-style agents explain the system before editing.
+- Added an explicit AI-agent onboarding protocol so AI coding agents explain the system before editing.
 
 ## 2026-05-08 - v3 real-system starter
 

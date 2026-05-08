@@ -4,13 +4,13 @@ This is the practical onboarding guide.
 
 Follow it once. After that, use `NOW.md` as your daily start page.
 
-If you just want copy-paste AI prompts, open `ASK-CODEX.md`.
+If you just want copy-paste AI prompts, open `ASK-AI.md`.
 
 ---
 
 ## If You Ask An AI Agent To Help
 
-You can give Codex, Claude Code, Cursor, or another file-capable agent this prompt:
+You can give any file-capable AI agent this prompt:
 
 ```text
 Clone or inspect this repo and help me set it up:

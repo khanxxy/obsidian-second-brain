@@ -7,7 +7,7 @@ Start here when you open the vault.
 ## First Setup
 
 - [ ] Read [[START-HERE]]
-- [ ] If using an AI agent, copy a prompt from [[ASK-CODEX]]
+- [ ] If using an AI agent, copy a prompt from [[ASK-AI]]
 - [ ] Fill in [[People/Me]]
 - [ ] Copy `Projects/.template/` to `Projects/<Your Project>/`
 - [ ] Fill in the new project's `Context.md`
