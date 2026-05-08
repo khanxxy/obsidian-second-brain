@@ -4,6 +4,8 @@ This is the practical onboarding guide.
 
 Follow it once. After that, use `NOW.md` as your daily start page.
 
+If you just want copy-paste AI prompts, open `ASK-CODEX.md`.
+
 ---
 
 ## If You Ask An AI Agent To Help

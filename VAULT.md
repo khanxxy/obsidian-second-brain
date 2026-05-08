@@ -9,6 +9,7 @@ Read this first. Then follow the links.
 ## Start Here
 
 - [[START-HERE]] - first-time onboarding
+- [[ASK-CODEX]] - copy-paste prompts for AI agents
 - [[Home]] - human dashboard and setup checklist
 - [[AGENTS]] - rules and protocols for AI agents
 - [[NOW]] - active projects, blockers, next actions
