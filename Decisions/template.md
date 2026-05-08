@@ -1,17 +1,22 @@
-# [Entscheidungstitel]
+# [Decision Title]
 
-## Entscheidung
-Was wurde entschieden?
+## Decision
 
-## Kontext
-Welche Situation oder welches Problem fuehrte dazu?
+What was decided?
 
-## Alternativen
+## Context
+
+What situation or problem led to this decision?
+
+## Alternatives
+
 - Option A:
 - Option B:
 
-## Warum diese Entscheidung
+## Why This Decision
+
 - ...
 
-## Konsequenzen
+## Consequences
+
 - ...

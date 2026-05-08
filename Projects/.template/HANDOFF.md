@@ -1,23 +1,20 @@
-# [Project Name] — Handoff Log
+# [Project Name] - Handoff
 
-> One entry per session. Newest on top.
-> Last 5 visible here — older entries go to ## Archive.
+One entry per meaningful session. Newest entry on top.
+
+Keep the last 5 entries visible. Move older entries to `## Archive`.
 
 ---
 
-## YYYY-MM-DD — [Agent / Human]
+## YYYY-MM-DD HH:MM - Agent / Human
 
-**What was done:**
-- ...
+**What was done:** ...
 
-**Current state:**
-- ...
+**Current state:** ...
 
-**You must do next:**
-- ...
+**You must do next:** ...
 
-**Watch out:**
-- ...
+**Watch out:** ...
 
 ---
 

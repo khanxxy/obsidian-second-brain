@@ -1,20 +1,23 @@
 ---
-tags: [person, kontakt]
-platform: telegram | whatsapp | signal
+tags: [person, contact]
+platform: telegram | whatsapp | signal | discord | slack
 user_id:
 created: YYYY-MM-DD
 ---
 
 # [Name / Username]
 
-## Kontext
-- Woher: 
-- Beziehung:
-- Sprache:
-- Relevante Themen:
+## Context
 
-## Notizen
+- Source:
+- Relationship:
+- Language:
+- Relevant topics:
+
+## Notes
+
 - ...
 
-## Verlinkungen
+## Links
+
 - [[Projects/...]]

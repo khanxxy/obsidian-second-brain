@@ -1,183 +1,222 @@
-# Agent Rules
+# AGENTS.md - Universal Agent Instructions
 
-Read this file first. Then read `VAULT.md`. Then read `NOW.md`.
+If you are an AI agent and this file was loaded automatically, follow it strictly.
+
+Core idea: this vault is the source of truth. Do not let useful context stay only in chat.
+
+---
+
+## Reading Order
+
+At the start of a vault-related session, read in this order:
+
+1. `VAULT.md` - map of the vault
+2. `AGENTS.md` - rules and protocols
+3. `NOW.md` - active work, blockers, next actions
+4. `!1 Work Log/<today>.md` - what already happened today, if it exists
+5. `AI-Learnings/AI Rules.md` - established agent lessons
+6. For project work: `Projects/<Project>/Context.md`
+7. For project work: `Projects/<Project>/HANDOFF.md`
+8. For knowledge wiki writes: `Knowledge/SCHEMA.md`
+
+Do not answer current-state questions from memory. Read the file.
 
 ---
 
 ## Navigation
 
-- Never guess the vault structure — use `VAULT.md` as the entry point.
-- Use `NOW.md` to understand what's currently active before touching anything.
+- Start from `VAULT.md`.
+- Use `NOW.md` before touching any project.
 - Follow wiki-links to the smallest useful context.
-- Check `Projects/<X>/HANDOFF.md` before starting work on any project.
+- Check `Projects/<Project>/HANDOFF.md` before continuing project work.
+- Search before creating new notes.
 
 ---
 
-## Editing
+## Editing Rules
 
-- Keep changes surgical. Only touch what's relevant to the task.
+- Keep changes surgical.
 - Do not create duplicate notes if the topic already exists.
 - Update `Changelog.md` when the vault structure changes.
-- Use templates from `Projects/.template/`, `! Briefings/template.md`, and `Decisions/template.md`.
+- Use templates from `Projects/.template/`, `!2 Briefings/template.md`, and `Decisions/template.md`.
+- Surface conflicts. Do not overwrite them silently.
+- Never report success without verification.
 
 ---
 
-## Daily Flow
+## Session End - Mandatory Handoff
 
-- Daily work sessions belong in `Work Log/YYYY-MM-DD.md`.
-- Bot outputs, news, and briefings belong in `! Briefings/`.
-- Structural changes belong in `Changelog.md`.
-- New durable knowledge belongs in `Knowledge/`, `People/`, `Projects/`, or `Decisions/`.
-
----
-
-## Session End — Mandatory Handoff Protocol
-
-Before ending any session, update these three files:
+Before ending any meaningful project session, update these three files:
 
 ### 1. `NOW.md`
-Update your project row: Status, Next Action, Blocker, your agent name, today's date.
 
-### 2. `Projects/<X>/HANDOFF.md`
+Update the project row:
+
+- Status
+- Next Action
+- Blocker
+- Last Agent
+- Updated date
+
+### 2. `Projects/<Project>/HANDOFF.md`
+
 Add a new entry at the top:
 
-```
-## YYYY-MM-DD HH:MM — [Agent Name]
+```markdown
+## YYYY-MM-DD HH:MM - <Agent Name>
 **What was done:** ...
 **Current state:** ...
 **You must do next:** ...
 **Watch out:** ...
 ```
 
-Keep the last 5 entries visible. Move older ones to `## Archive`.
+Keep the last 5 entries visible. Move older entries to `## Archive`.
 
-### 3. `Work Log/YYYY-MM-DD.md`
-Add your session entry. If today's file doesn't exist, copy from `Work Log/template.md`.
+### 3. `!1 Work Log/YYYY-MM-DD.md`
 
-**Without these three updates, the session is not complete.**
-The next agent — human or AI — will lose context and have to re-discover everything.
+If today's file does not exist, copy `!1 Work Log/template.md`.
+
+Add a session entry under `## Sessions Today`:
+
+```markdown
+### HH:MM - <Agent Name>: <Short title>
+**What was done:** ...
+**Result:** ...
+**Files:** path/to/file
+```
+
+Without these three updates, the session is not complete.
 
 ---
 
-## TODO Routing — where does a new task land?
+## TODO Routing
 
-When the user says "put that on TODO" / "later" / "remember" — OR when you discover a follow-up task during a session — never let it die in chat. Before session end, write it to the right place:
+When the user says "remember this", "later", "put this on TODO", or when you discover a follow-up task, route it before session end.
 
-| Type of task | Where | Format |
+| Task type | Destination | Format |
 |---|---|---|
-| Actionable today/tomorrow | `NOW.md` → Top 3 or Active Projects "Next Action" | Inline |
-| Planned for "whenever there's time" | `Backlog.md` → matching category | One row with Status (🟢/🟡/🔴) + Effort (S/M/L/XL) + 1-line note |
-| Belongs to a specific project | `Projects/<X>/HANDOFF.md` → "You must do next" | In the running HANDOFF entry |
-| Raw idea, no time to sort | `Inbox/YYYY-MM-DD-shorttitle.md` | 3-5 lines, sort during weekly review |
-| Architecture decision with rationale | `Decisions/YYYY-MM-DD-<topic>.md` | ADR format |
+| Actionable today/tomorrow | `NOW.md` Top 3 or Active Projects "Next Action" | Inline |
+| Planned for later | `Backlog.md` | One row with status, effort, note |
+| Belongs to a project | `Projects/<Project>/HANDOFF.md` | In "You must do next" |
+| Raw unsorted idea | `Inbox/YYYY-MM-DD-short-title.md` | 3-5 lines |
+| Architecture decision | `Decisions/YYYY-MM-DD-topic.md` | ADR format |
 
-**Golden rule:** If a TODO is mentioned in chat and lands nowhere in the vault → it does not exist. The user forgets, the next agent knows nothing about it. Better to over-categorize than under.
+Backlog status:
 
-**Status markers in Backlog:**
-- 🔥 in `NOW.md` Top 3 = this week
-- 🟢 in Backlog = ready to start, plan complete
-- 🟡 in Backlog = idea clear, plan missing
-- 🔴 in Backlog = raw note, possibly drop
+- `Ready` - can start now
+- `Open` - idea clear, plan missing
+- `Raw` - rough note, may be dropped
 
----
-
-## Anti-Hallucination Rules
-
-- Never answer questions about current state from memory alone — read the actual file first.
-- Never report success without verifying the result.
-- If you're unsure what's in a file, read it. Do not guess.
-- If a conflict exists in git, stop and report it. Do not overwrite.
+Golden rule: if a TODO is mentioned in chat and lands nowhere in the vault, it does not exist.
 
 ---
 
-## Git & Vault-Sync — Known Failure-Modes
+## Work Log vs Briefings
 
-This vault is typically synced across multiple devices (Mac, VPS, mobile) via Git. Race-conditions are normal. Here are the four common failure-modes and how to resolve them.
+- `!1 Work Log/` is for human or agent sessions, commits, decisions, and operational notes.
+- `!2 Briefings/` is for bot output, automated reports, daily digests, and feeds.
+- `Changelog.md` is for structural vault changes: new templates, renamed folders, changed rules.
 
-### Before edits
-```bash
-bash scripts/vault-prep.sh   # pull/rebase
-```
-
-### After edits
-```bash
-bash scripts/vault-finish.sh "vault: short description" file1 file2 ...
-```
-
-### Failure-Mode 1: `dubious ownership in repository`
-Common in containerized setups (Docker) when files are owned by a different UID than the executing process.
-```bash
-git config --global --add safe.directory /path/to/vault
-```
-
-### Failure-Mode 2: `Permission denied` when writing
-Files were written as a different user (often root in container contexts). Fix ownership:
-```bash
-# In container context (example Docker)
-docker exec --user root <container> chown -R <uid>:<gid> /path/to/vault
-```
-**Best practice:** ALWAYS run mutating ops as the vault-owning user, never as root.
-
-### Failure-Mode 3: `Could not apply ... rebase conflict`
-Race-condition with auto-sync from another device.
-
-- **If the other device has the canonical version:** `git fetch origin && git reset --hard origin/main` (loses your local commits — make sure they're saved elsewhere first)
-- **If your local edits are critical:** manually resolve the conflict, then `git add <file> && git rebase --continue`
-- **For programmatic merges of "both versions wanted" scenarios:**
-  ```python
-  import re
-  s = open(p).read()
-  merged = re.sub(r'<<<<<<< HEAD\n(.*?)=======\n(.*?)>>>>>>> .*?\n',
-                  lambda m: m.group(1) + m.group(2),
-                  s, flags=re.DOTALL)
-  open(p, 'w').write(merged)
-  ```
-- **For test-runs that write to vault:** pause auto-sync first to prevent races
-
-### Failure-Mode 4: `git push` rejected with "fast-forward"
-Another sync-cycle pushed in the meantime.
-```bash
-git pull --rebase origin main && git push origin main
-```
+Do not write normal code-session summaries into `!2 Briefings/`.
 
 ---
 
-## Skill System (for skill-capable agents)
+## Git And Vault Sync
 
-Skill-capable agents (Codex CLI, Claude Code, Antigravity, Gemini CLI, GitHub Copilot, Amp, etc.) auto-discover skills from `~/.agents/skills/<name>/SKILL.md`. A vault-specific skill compresses these AGENTS.md rules + your private conventions into one file that loads automatically when the agent's task touches the vault.
+This vault is designed to work across devices and agents.
 
-**Build your own vault-skill:**
-1. Install `mattpocock/skills/skills/productivity/write-a-skill` via `npx skills@latest add ...`
-2. Use it to generate `~/.agents/skills/<your-vault>/SKILL.md` based on this AGENTS.md + your custom conventions
-3. Symlink for Claude Code: `ln -s ~/.agents/skills/<your-vault> ~/.claude/skills/<your-vault>`
-4. Mirror in vault for human reading: `Agents/Skills/<your-vault>.md`
+Before edits:
 
-**Why this matters:** Without a skill, every new session re-reads AGENTS.md cold. With a skill, the agent has the rules + lessons internalized from session start, plus pulls them only when the task triggers vault-related descriptions (no noise on unrelated tasks).
+```bash
+bash scripts/vault-prep.sh
+```
 
-See `Knowledge/AI/Karpathy Autoresearch Loop.md` for the related "locked rules + mutable application" pattern.
+After edits:
+
+```bash
+bash scripts/vault-finish.sh "vault: short description" file1 file2
+```
+
+Status check:
+
+```bash
+bash scripts/vault-status.sh
+```
+
+Common failure modes:
+
+| Symptom | Response |
+|---|---|
+| `dubious ownership in repository` | Add the repo as a safe Git directory. |
+| `Permission denied` | Fix file ownership; avoid writing as root in containers. |
+| Rebase conflict | Stop, report it, and resolve deliberately. |
+| Push rejected | Pull with rebase, then push again. |
+
+Do not use `git reset --hard`, `git clean`, or `push --force` unless the user explicitly asks.
+
+---
+
+## Knowledge Wiki
+
+Use `Knowledge/raw/` for immutable source captures.
+
+Use domain folders for distilled pages:
+
+- `Knowledge/AI/`
+- `Knowledge/Business/`
+- `Knowledge/Health/`
+- `Knowledge/Marketing/`
+- `Knowledge/Tools/`
+- `Knowledge/Trading/`
+
+Before writing durable knowledge:
+
+1. Read `Knowledge/SCHEMA.md`.
+2. Link sources or raw notes.
+3. Update `Knowledge/LOG.md`.
+4. Prefer small, maintainable concept pages over giant notes.
+
+---
+
+## Skill System
+
+Skill-capable agents can load a compact vault workflow from:
+
+```text
+Agents/Skills/your-vault/SKILL.md
+```
+
+Install it locally:
+
+```bash
+bash scripts/install-skill.sh
+```
+
+The skill is not a replacement for this file. `AGENTS.md` remains the source of truth.
 
 ---
 
 ## Style
 
-- Write in English. (Exception: user explicitly writes in another language.)
-- Prefer minimal, clear notes over elaborate systems.
-- Do not add complexity unless it's actually needed.
-- Short sentences. Active voice.
+- Write in English unless the user prefers another language.
+- Use short, clear notes.
+- Prefer direct status over narrative.
+- Use active voice.
+- Keep project docs practical, not decorative.
 
 ---
 
-## What NOT to do
+## What Not To Do
 
-- No "while you're at it" improvements — only what was asked.
-- No new abstractions, helpers, or frameworks without authorization.
-- No destructive git actions (`reset --hard`, `push --force`) without explicit permission.
-- No skipping hooks (`--no-verify`).
-- No silent errors — surface them.
-- Never report success without verification.
+- Do not make "while you're at it" changes.
+- Do not add frameworks, plugins, or abstractions without a clear need.
+- Do not skip hooks or checks.
+- Do not leave TODOs only in chat.
+- Do not report success without verification.
+- Do not write private data into this public template.
 
 ---
 
-## When in doubt
+## When In Doubt
 
-Ask ONE clarifying question. Never guess. Never assume. When the task is crystal-clear: just do it.
+Ask one clarifying question. If the task is clear, do it and verify it.

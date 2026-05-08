@@ -1,11 +1,13 @@
 # Users
 
-Kontakte aus Messaging-Plattformen wie Telegram, WhatsApp oder Signal.
+Contacts from messaging platforms such as Telegram, WhatsApp, Signal, Discord, or Slack.
 
-## Neue Kontakte anlegen
-1. `template.md` kopieren
-2. Dateiname = User-ID, Handle oder sauberer Name
-3. Nur Kontext eintragen, der spaeter wirklich nuetzlich ist
+## Add A New Contact
 
-## Warum?
-Wenn ein Agent mit Kontakten interagiert, kann er hier nachlesen wer die Person ist und welcher Kontext relevant ist.
+1. Copy `template.md`.
+2. Use the user ID, handle, or clean name as the filename.
+3. Only add context that will be useful later.
+
+## Why This Exists
+
+When an agent interacts with contacts, it can read who the person is and what context matters.

@@ -1,23 +1,26 @@
 # Knowledge
 
-> Permanent reference material. Things that stay true over time.
-> Organized by domain.
+Long-term knowledge that should survive individual projects.
+
+Before writing here, read [[Knowledge/SCHEMA]].
+
+---
 
 ## Domains
 
-| Domain | Description |
-|--------|-------------|
-| [[Knowledge/AI]] | AI tools, models, workflows |
-| [[Knowledge/Business]] | Strategy, ops, growth |
-| [[Knowledge/Health]] | Health, fitness, longevity |
-| [[Knowledge/Tools]] | Software, systems, setups |
+- [[Knowledge/AI/Index]]
+- [[Knowledge/Business/Index]]
+- [[Knowledge/Health/Index]]
+- [[Knowledge/Marketing/Index]]
+- [[Knowledge/Tools/Index]]
+- [[Knowledge/Trading/Index]]
 
-## How to use
+## System Files
 
-- Add a note when you learn something that will matter in 6 months
-- Link from projects when relevant
-- Review quarterly and prune what's no longer true
+- [[Knowledge/SCHEMA]] - rules for wiki writes
+- [[Knowledge/LOG]] - ingest and maintenance log
+- [[Knowledge/raw/README]] - immutable source captures
 
-## AI Concepts
+## Existing Notes
 
-- [[AI/Karpathy Autoresearch Loop|Karpathy Autoresearch Loop]] — Pattern: Locked Evaluator + Mutable Strategy + Cron-LLM-Agent for autonomous optimization
+- [[Knowledge/AI/Karpathy Autoresearch Loop]]

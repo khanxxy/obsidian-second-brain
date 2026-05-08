@@ -1,33 +1,47 @@
-# [Project Name] — Context
+# [Project Name] - Context
 
-> One sentence: what this is and why it exists.
+One sentence: what this project is and why it exists.
 
-## Status: [Active / Paused / Done]
+## Status
+
+Active / Paused / Done
 
 ## Background
-_What is it, why does it exist, since when?_
 
-## Team
-- [[Ich]] — Role
-- [[Person]] — Role
+What is it, why does it exist, and since when?
+
+## Owner And Team
+
+- [[People/Me]] - Role
+- [[People/Index|Person]] - Role
 
 ## Key Links
-- [[Voice]] — How this project communicates
-- [[ICP]] — Target audience
-- [[Services]] — What is offered
+
+- Repo:
+- Website:
+- Docs:
+- Dashboard:
+
+## Current State
+
+What is true right now?
 
 ## Next Meaningful Step
+
 - ...
 
-## External References
-- Website:
-- Repo:
-- Drive / Docs:
+## Blockers
+
+- ...
 
 ## Metrics
+
 | Metric | Current | Goal |
-|--------|---------|------|
+|---|---|---|
 | | | |
 
-## Open Items
-- [ ] ...
+## Related Notes
+
+- [[Voice]]
+- [[ICP]]
+- [[Services]]

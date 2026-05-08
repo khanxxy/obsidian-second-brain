@@ -7,9 +7,10 @@ date: YYYY-MM-DD
 
 ## Sessions Today
 
-| Time | Project | Agent | What happened |
-|------|---------|-------|---------------|
-| HH:MM | | | |
+### HH:MM - Agent: Short Title
+**What was done:** ...
+**Result:** ...
+**Files:** path/to/file
 
 ## Commits Today
 

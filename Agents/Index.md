@@ -1,58 +1,40 @@
 # Agents
 
-> Uebersicht aller Agents, Automationen und Tool-Setups.
-> Diese Sektion ist optional. Wenn du keine Bots nutzt, kann sie fast leer bleiben.
+Agents, bots, MCPs, sync rules, and skills.
 
-## Dashboard
-- **[[Agents/Active Bots]]** — Live-Feed aller Bot-Runs nach Datum
-
-## Konfiguration
-- [[Agents/MCP Stack]] — Alle MCPs, Config, Troubleshooting
-- [[Agents/Vault Sync]] — Git-Workflow fuer mehrere Geraete oder Agents
-- [[AI-Learnings/AI Regeln]] — Regeln für alle Agents
-- [[Agents/Skills/your-vault]] — Template: how to build a vault-specific skill for skill-capable agents (Codex CLI, Claude Code, etc.)
+This area is optional at first. Keep it small until you actually run automations.
 
 ---
 
-## Zeitplaene
+## Start Here
 
-| Agent | Zeitplan | Script | Output |
-|-------|----------|--------|--------|
-| _Beispiel: AI Digest_ | _Täglich 9:00_ | _~/Scripts/ai-digest/_ | _[[Projects/...]]_ |
-| _Beispiel: Vault Sync_ | _Alle 5 Min_ | _~/Scripts/vault-sync.sh_ | _—_ |
-
----
-
-## Agent-Details
-
-### Beispiel-Agent
-- **Was:** Beschreibung des Agents
-- **Script:** `~/Scripts/agent-name/run.sh`
-- **LaunchAgent / Cron:** `com.user.agent-name.plist` oder Crontab
-- **Output:** `~/Vault/Projects/.../YYYY-MM-DD.md`
-- **Logs:** `~/Scripts/agent-name/output.log` / `error.log`
-- **APIs:** Welche APIs werden genutzt?
-
-> Kopiere diesen Block für jeden neuen Agent.
+- [[Agents/Vault Sync]] - Git workflow for multiple devices or agents
+- [[Agents/MCP Stack]] - tools and API integrations
+- [[Agents/Active Bots]] - running automations
+- [[AI-Learnings/AI Rules]] - established lessons for agents
+- [[Agents/Skills/your-vault/SKILL]] - installable vault skill
 
 ---
 
-## LaunchAgents oder Cron
+## Agent Inventory
 
-macOS:
-- `~/Library/LaunchAgents/`
-
-Linux / VPS:
-- `crontab -e`
-- `systemd --user`
-
-Fuehre hier nur die Jobs auf, die du wirklich benutzt.
+| Agent | Schedule | Script | Output |
+|---|---|---|---|
+| Example: Daily Digest | Daily 09:00 | `~/Scripts/daily-digest/` | [[!2 Briefings/Index]] |
+| Example: Vault Sync | Every 15 min | `~/Scripts/vault-sync.sh` | Git |
 
 ---
 
-## Kosten-Tracking
+## Agent Detail Template
 
-| Provider | Budget | Aktuell | Alert bei |
-|----------|--------|---------|-----------|
-| _Anthropic_ | _$100/Mo_ | _$--_ | _$80_ |
-| _OpenRouter_ | _$50/Mo_ | _$--_ | _$40_ |
+### Agent Name
+
+- **What:** What the agent does
+- **Trigger:** Manual, cron, webhook, launch agent
+- **Script:** `path/to/script`
+- **Output:** `path/to/output`
+- **Logs:** `path/to/logs`
+- **APIs:** Which APIs it uses
+- **Owner:** Human responsible for it
+
+Copy this block for each real agent.

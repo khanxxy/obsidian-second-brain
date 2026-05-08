@@ -1,36 +1,41 @@
 # NOW
 
-> What is happening right now. This is the single source of truth for current state.
-> Read this before diving into any project.
-> Update this at the end of every session.
+What is happening right now.
+
+This is the single source of truth for active work. Keep it short. Details belong in project `HANDOFF.md` files.
+
+---
+
+## Top 3 Now
+
+| Priority | Project | Why now | Next entry point |
+|---|---|---|---|
+| 1 | [[Projects/Index|First Project]] | Replace this row with your current focus. | Copy `Projects/.template/` and fill `Context.md`. |
+| 2 | | | |
+| 3 | | | |
 
 ---
 
 ## Active Projects
 
 | Project | Status | Next Action | Blocker | Last Agent | Updated |
-|---------|--------|-------------|---------|------------|---------|
-| [Project Name] | In Progress | ... | — | Human | YYYY-MM-DD |
-
----
-
-## This Week's Focus
-
-- ...
+|---|---|---|---|---|---|
+| [[Projects/Index|First Project]] | Setup | Create project folder from template. | None | Human | YYYY-MM-DD |
 
 ---
 
 ## Waiting On
 
-- ...
+- Add external blockers here.
 
 ---
 
 ## Recently Finished
 
-- ...
+- Move completed work here briefly, then archive details in the project folder.
 
 ---
 
-> **Agent rule:** At the end of every session, update the row for the project you worked on.
-> If you created a `HANDOFF.md`, link it here.
+## Agent Rule
+
+At the end of every project session, update the relevant row above and link the project `HANDOFF.md`.

@@ -1,49 +1,65 @@
 # Vault Sync
 
-#agents #git #sync
+Git workflow for multiple devices or multiple agents editing the same vault.
 
-Wenn mehrere Geraete oder mehrere Agents denselben Vault bearbeiten, braucht der Vault einen klaren Git-Workflow.
+---
 
-## Kanonischer Stand
+## Canonical State
 
-- `origin/main` ist der gemeinsame Stand
-- lokale Kopien auf Mac, VPS oder anderen Rechnern sind Arbeitskopien
+- The shared branch is the canonical state.
+- Local copies on laptops, servers, or containers are working copies.
+- Always pull before editing and push after meaningful edits.
 
-## Minimaler Ablauf
+---
 
-Vor Aenderungen:
+## Helper Scripts
 
-```bash
-git pull --rebase --autostash origin main
-```
-
-Nach Aenderungen:
+Before edits:
 
 ```bash
-git add <dateien>
-git commit -m "vault: kurze beschreibung"
-git push origin main
+bash scripts/vault-prep.sh
 ```
 
-## Optional: Hilfsskripte
+After edits:
 
-Dieses Template liefert drei optionale Skripte:
+```bash
+bash scripts/vault-finish.sh "vault: short description" file1 file2
+```
 
-- `scripts/vault-prep.sh`
-- `scripts/vault-finish.sh`
-- `scripts/vault-status.sh`
+Status:
 
-Sie vereinfachen den Ablauf fuer wiederkehrende Vault-Updates.
+```bash
+bash scripts/vault-status.sh
+```
 
-## Konflikte
+---
 
-- Bei Rebase- oder Merge-Konflikten nicht blind ueberschreiben
-- Datei lesen
-- beide Seiten sauber zusammenfuehren
-- danach committen und pushen
+## Manual Flow
 
-## Empfehlung
+```bash
+git pull --rebase --autostash
+git add <files>
+git commit -m "vault: short description"
+git push
+```
 
-- Vor jedem `update obsidian` erst pullen
-- Nach jeder inhaltlichen Vault-Aenderung direkt committen
-- Keine langen lokalen Divergenzen aufbauen
+---
+
+## Conflict Rules
+
+- Do not blindly overwrite conflicts.
+- Read the conflicting file.
+- Preserve user work.
+- If unsure, stop and ask.
+- Do not use destructive Git commands unless explicitly requested.
+
+---
+
+## Common Problems
+
+| Problem | Response |
+|---|---|
+| Push rejected | Pull with rebase, then push. |
+| Rebase conflict | Stop and resolve deliberately. |
+| Permission denied | Fix file ownership. |
+| Dubious ownership | Configure Git safe.directory for the vault path. |

@@ -4,28 +4,26 @@ tags: [agents, dashboard]
 
 # Active Bots
 
-> Chronologischer Feed aller Bot-Runs.
-> Wenn du keine Bots hast, bleibt diese Datei leer.
+Running automations and their outputs.
+
+Leave this mostly empty until you actually run bots.
 
 ---
 
 ## Bots
 
-| Bot | Zeitplan | Status |
-|-----|----------|--------|
-| _Beispiel: AI Digest_ | _Täglich 9:00_ | _aktiv_ |
-| _Beispiel: Research Bot_ | _Nach Bedarf_ | _aktiv_ |
+| Bot | Schedule | Status | Output |
+|---|---|---|---|
+| Example: Daily Digest | Daily 09:00 | active | [[!2 Briefings/Index]] |
 
 ---
 
 ## Run Log
 
-| Datum | Bot | Report |
-|-------|-----|--------|
-| _YYYY-MM-DD_ | _AI Digest_ | _[[Projects/.../YYYY-MM-DD]]_ |
+| Date | Bot | Report |
+|---|---|---|
+| YYYY-MM-DD | Daily Digest | `!2 Briefings/YYYY-MM-DD.md` |
 
-> Jeder Bot-Run fügt hier eine Zeile hinzu. Neueste zuerst.
+Newest first.
 
----
-
-> Konfiguration & Details: [[Agents/Index]]
+Related: [[Agents/Index]]
