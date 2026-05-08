@@ -10,6 +10,7 @@ Update this when you change folder structure, rename files, add templates, or ch
 
 - Added `START-HERE.md` as the first-time onboarding guide for new users.
 - Linked `START-HERE.md` from `README.md`, `Home.md`, and `VAULT.md`.
+- Added an explicit AI-agent onboarding protocol so Codex/Claude-style agents explain the system before editing.
 
 ## 2026-05-08 - v3 real-system starter
 

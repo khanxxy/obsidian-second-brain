@@ -6,6 +6,27 @@ Follow it once. After that, use `NOW.md` as your daily start page.
 
 ---
 
+## If You Ask An AI Agent To Help
+
+You can give Codex, Claude Code, Cursor, or another file-capable agent this prompt:
+
+```text
+Clone or inspect this repo and help me set it up:
+https://github.com/khanxxy/obsidian-second-brain
+
+Read README.md, START-HERE.md, VAULT.md, and AGENTS.md first. Then explain what this system is and guide me through the first setup. Do not edit files until you ask me for my first project name and one-sentence goal.
+```
+
+The agent should explain the workflow before editing anything:
+
+- `NOW.md` = current state
+- `Projects/<Project>/HANDOFF.md` = continuity between sessions
+- `!1 Work Log/` = session history
+- `Backlog.md` = later, not now
+- `Knowledge/` = durable knowledge
+
+---
+
 ## 1. Create Your Vault
 
 On GitHub:

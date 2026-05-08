@@ -6,6 +6,42 @@ Core idea: this vault is the source of truth. Do not let useful context stay onl
 
 ---
 
+## New User Onboarding Protocol
+
+If the user asks you to inspect, clone, set up, explain, or "check" this repo for the first time, do this before making edits:
+
+1. Read `README.md`, `START-HERE.md`, `VAULT.md`, and this `AGENTS.md`.
+2. Tell the user, in plain language, what this repo is:
+   - an Obsidian Second Brain template
+   - built for humans and AI agents
+   - centered on `NOW.md`, project `HANDOFF.md`, and `!1 Work Log/`
+   - designed to prevent context loss between sessions
+3. Tell the user the first practical steps:
+   - open the folder as an Obsidian vault
+   - fill in `People/Me.md`
+   - create one project from `Projects/.template/`
+   - add that project to `NOW.md`
+   - start future sessions from `NOW.md`
+4. Ask for the user's first project name and one-sentence goal before creating or editing project files.
+5. After the user answers, help set up only that first project:
+   - copy `Projects/.template/` to `Projects/<Project Name>/`
+   - fill `Context.md` from the user's answers
+   - add the project to `NOW.md`
+   - add an initial `HANDOFF.md` entry
+   - create or update today's `!1 Work Log/YYYY-MM-DD.md`
+6. Offer skill installation only after the basic vault is understandable:
+   - `bash scripts/install-skill.sh`
+
+Do not silently fill the vault with fake content. Keep the first setup small and real.
+
+Suggested first response:
+
+```text
+This is an Obsidian Second Brain template for working with AI agents. The main workflow is: keep current state in NOW.md, keep project continuity in each project HANDOFF.md, and record sessions in !1 Work Log. I will first help you set up one real project. What should your first project be called, and what is its one-sentence goal?
+```
+
+---
+
 ## Reading Order
 
 At the start of a vault-related session, read in this order:
